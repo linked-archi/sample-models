@@ -1,0 +1,1926 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model xmlns="http://www.opengroup.org/xsd/archimate/3.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengroup.org/xsd/archimate/3.0/ http://www.opengroup.org/xsd/archimate/3.1/archimate3_Diagram.xsd" identifier="id-vio-group-ea">
+  <name xml:lang="en">VIO Group - Enterprise Architecture</name>
+  <documentation xml:lang="en">Group-level enterprise architecture of VIO Group, a FICTIONAL multinational tour operator. Maintained by Group Enterprise Architecture. It describes the group view only: source-market systems and many integration details are known to other teams and live in their own sources (C4, Backstage, LeanIX, BPMN).</documentation>
+  <elements>
+    <element identifier="id-2e736bf6894a" xsi:type="Capability">
+      <name xml:lang="en">Booking Management</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">capability/booking-management</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-1bc20e61c89c" xsi:type="Capability">
+      <name xml:lang="en">Package Assembly</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">capability/package-assembly</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-9dad8292f634" xsi:type="Capability">
+      <name xml:lang="en">Destination Services</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">capability/destination-services</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-47748b9d2f2d" xsi:type="Capability">
+      <name xml:lang="en">Sales and Distribution</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">capability/sales-and-distribution</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-050ddcaf1f98" xsi:type="Capability">
+      <name xml:lang="en">Data and Analytics</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">capability/data-and-analytics</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-9e8164bb44ad" xsi:type="Capability">
+      <name xml:lang="en">Financial Management</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">capability/financial-management</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-c70ce78aa680" xsi:type="Capability">
+      <name xml:lang="en">Customer Data Management</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">capability/customer-data-management</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-80ee6a59175b" xsi:type="Capability">
+      <name xml:lang="en">Commercial Management</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">capability/commercial-management</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-39abb53b7200" xsi:type="Capability">
+      <name xml:lang="en">Inventory Management</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">capability/inventory-management</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-059c3213914e" xsi:type="Capability">
+      <name xml:lang="en">Payment Handling</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">capability/payment-handling</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-214bfe9d1f6a" xsi:type="Capability">
+      <name xml:lang="en">Customer Service</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">capability/customer-service</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-77923c2a1082" xsi:type="Capability">
+      <name xml:lang="en">Travel Distribution</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">capability/travel-distribution</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-d27b52bd44ca" xsi:type="Capability">
+      <name xml:lang="en">Product and Contracting</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">capability/product-and-contracting</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-a97269b4adfd" xsi:type="Capability">
+      <name xml:lang="en">Customer Management</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">capability/customer-management</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-6c715ace3ef6" xsi:type="Capability">
+      <name xml:lang="en">Travel Operations</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">capability/travel-operations</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-deb0f53ea74e" xsi:type="Capability">
+      <name xml:lang="en">Product Contracting</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">capability/product-contracting</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-3fb5a561005b" xsi:type="Capability">
+      <name xml:lang="en">Charter Seat Allocation</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">capability/charter-seat-allocation</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-9840c0ce779c" xsi:type="Capability">
+      <name xml:lang="en">Pricing and Yield</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">capability/pricing-and-yield</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-b997a2c1ab78" xsi:type="Capability">
+      <name xml:lang="en">Corporate Management</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">capability/corporate-management</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-8d7f43a571b5" xsi:type="BusinessProcess">
+      <name xml:lang="en">Book Holiday Package</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">business-process/book-holiday-package</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-3289fb0c2b68" xsi:type="BusinessActor">
+      <name xml:lang="en">Source Market Benelux</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">business-actor/source-market-benelux</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-5de3b23f2351" xsi:type="BusinessActor">
+      <name xml:lang="en">Source Market Nordics</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">business-actor/source-market-nordics</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-d70d486e8df1" xsi:type="BusinessActor">
+      <name xml:lang="en">Group Technology</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">business-actor/group-technology</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-a2f017c78f06" xsi:type="BusinessActor">
+      <name xml:lang="en">Source Market Germany</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">business-actor/source-market-germany</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-b551a88b54dc" xsi:type="BusinessActor">
+      <name xml:lang="en">Destination Operations</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">business-actor/destination-operations</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-4a55970a336b" xsi:type="BusinessProcess">
+      <name xml:lang="en">Amend Booking</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">business-process/amend-booking</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-730d0f783af3" xsi:type="BusinessActor">
+      <name xml:lang="en">Customer Operations</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">business-actor/customer-operations</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-249c61d338ec" xsi:type="BusinessActor">
+      <name xml:lang="en">Source Market United Kingdom</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">business-actor/source-market-united-kingdom</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-2510bfd532a2" xsi:type="BusinessActor">
+      <name xml:lang="en">Group Finance</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">business-actor/group-finance</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-e161395c79f9" xsi:type="BusinessProcess">
+      <name xml:lang="en">Deliver Destination Services</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">business-process/deliver-destination-services</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-f5c7dbd92b7f" xsi:type="BusinessActor">
+      <name xml:lang="en">VIO Group</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">business-actor/vio-group</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-77b0cf0903a4" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Finance Ledger</name>
+      <documentation xml:lang="en">General ledger and revenue recognition.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">application-component/finance-ledger</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-cb2d478a69fb" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Trade Partner Portal</name>
+      <documentation xml:lang="en">B2B portal for travel agencies. LeanIX still calls it 'Reservation Portal'.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">application-component/trade-partner-portal</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-9e48ecd2951e" xsi:type="ApplicationService">
+      <name xml:lang="en">Excursion Booking Service</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">application-service/excursion-booking-service</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-2f98ce500322" xsi:type="ApplicationService">
+      <name xml:lang="en">Booking Orchestration Service</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">application-service/booking-orchestration-service</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="en">arch:Target</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-3412690e1a51" xsi:type="ApplicationService">
+      <name xml:lang="en">Availability Service</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">application-service/availability-service</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-1bbbe221e11c" xsi:type="ApplicationService">
+      <name xml:lang="en">Benelux Booking Service</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">application-service/benelux-booking-service</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="en">arch:Baseline</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-38cbfc854b4b" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Customer Notification Service</name>
+      <documentation xml:lang="en">E-mail, SMS and push notifications to travellers.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">application-component/notification-service</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-5dfba53a9b39" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Flight Inventory Connector</name>
+      <documentation xml:lang="en">Seat availability from the group airline and third-party carriers.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">application-component/flight-inventory-connector</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-8feb96f10dbb" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Reservation Platform</name>
+      <documentation xml:lang="en">Core reservation system of record for package holidays since 2004.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">application-component/reservation-platform</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="en">arch:Baseline</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-9783234debdf" xsi:type="ApplicationService">
+      <name xml:lang="en">Flight Availability Service</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">application-service/flight-availability-service</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-49bff92c741a" xsi:type="ApplicationService">
+      <name xml:lang="en">Notification API</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">application-service/notification-api</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-3a57f504cf8b" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Inventory Hub</name>
+      <documentation xml:lang="en">Hotel allotments and availability across all source markets.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">application-component/inventory-hub</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-782b51aaa28f" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Booking Orchestrator</name>
+      <documentation xml:lang="en">Event-driven booking orchestration replacing the Reservation Platform.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">application-component/booking-orchestrator</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="en">arch:Target</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-d111fc2d941c" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Customer Profile Service</name>
+      <documentation xml:lang="en">Traveller profiles, consent and preferences.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">application-component/customer-profile-service</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-8400a6af817a" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Contracting System</name>
+      <documentation xml:lang="en">Hotel and supplier contract management.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">application-component/contracting-system</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-e3483901cc51" xsi:type="ApplicationService">
+      <name xml:lang="en">Booking Service</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">application-service/booking-service</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="en">arch:Baseline</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-84617035d69d" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Benelux Reservation System</name>
+      <documentation xml:lang="en">Reservation system of the Benelux market for coach and charter holidays, taken over with a regional tour operator in 2015.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">application-component/benelux-reservation-system</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="en">arch:Baseline</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-87e933647a76" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Dynamic Packaging Engine</name>
+      <documentation xml:lang="en">Assembles flight, hotel and transfer components into bookable packages.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">application-component/dynamic-packaging-engine</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-2c66c4a3f22e" xsi:type="ApplicationService">
+      <name xml:lang="en">Payment Service</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">application-service/payment-service</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-07d01822f5f1" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Payment Gateway</name>
+      <documentation xml:lang="en">Card and alternative payment orchestration.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">application-component/payment-gateway</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-ac772b344a85" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Pricing Engine</name>
+      <documentation xml:lang="en">Dynamic pricing and yield rules.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">application-component/pricing-engine</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-6f24db0680f2" xsi:type="ApplicationService">
+      <name xml:lang="en">Ledger Posting Service</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">application-service/ledger-posting-service</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-1d96b2640902" xsi:type="ApplicationService">
+      <name xml:lang="en">Pricing Service</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">application-service/pricing-service</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-a99054440ef4" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Web Shop</name>
+      <documentation xml:lang="en">B2C web and app shop for all source markets.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">application-component/web-shop</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-81ad645744b4" xsi:type="ApplicationService">
+      <name xml:lang="en">Package Assembly Service</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">application-service/package-assembly-service</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-a9a4e69c92b5" xsi:type="ApplicationService">
+      <name xml:lang="en">Contract Load Service</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">application-service/contract-load-service</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-633f7623f350" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Data Lakehouse</name>
+      <documentation xml:lang="en">Group analytics platform fed by booking and customer events.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">application-component/data-lakehouse</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-35f2b70fb765" xsi:type="ApplicationService">
+      <name xml:lang="en">Customer Profile API</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">application-service/customer-profile-api</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-be5b9ecb558b" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Destination Services Platform</name>
+      <documentation xml:lang="en">Transfers, excursions and resort representatives.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">application-component/destination-services-platform</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-d3899217bf7c" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Agent Desktop</name>
+      <documentation xml:lang="en">Retail shop and contact centre booking desktop.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">application-component/agent-desktop</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-b88d6f1e27a0" xsi:type="Goal">
+      <name xml:lang="en">Reduce cost of legacy platforms</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">goal/reduce-cost-of-legacy-platforms</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-db2a1923eea7" xsi:type="Plateau">
+      <name xml:lang="en">Baseline 2026</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">plateau/baseline-2026</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="en">arch:Baseline</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-002c8ec6fb8b" xsi:type="Plateau">
+      <name xml:lang="en">Target 2028</name>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">plateau/target-2028</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="en">arch:Target</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-99941352ecd5" xsi:type="WorkPackage">
+      <name xml:lang="en">Retire Reservation Platform</name>
+      <documentation xml:lang="en">Decommission the Reservation Platform once every consumer uses the Booking Orchestration Service. See ADR-0007.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="en">work-package/retire-reservation-platform</value>
+        </property>
+      </properties>
+    </element>
+  </elements>
+  <relationships>
+    <relationship identifier="id-fe0942eb8845" source="id-47748b9d2f2d" target="id-77923c2a1082" xsi:type="Composition" />
+    <relationship identifier="id-43f23d242340" source="id-77b0cf0903a4" target="id-9e8164bb44ad" xsi:type="Realization" />
+    <relationship identifier="id-999b5640e757" source="id-b551a88b54dc" target="id-e161395c79f9" xsi:type="Assignment" />
+    <relationship identifier="id-6840c48c69b8" source="id-d27b52bd44ca" target="id-3fb5a561005b" xsi:type="Composition" />
+    <relationship identifier="id-d301378aff32" source="id-2c66c4a3f22e" target="id-8d7f43a571b5" xsi:type="Serving" />
+    <relationship identifier="id-e540c69191b7" source="id-87e933647a76" target="id-1bc20e61c89c" xsi:type="Realization" />
+    <relationship identifier="id-87b0a95472df" source="id-1d96b2640902" target="id-8feb96f10dbb" xsi:type="Serving" />
+    <relationship identifier="id-06d17fd21c52" source="id-1bbbe221e11c" target="id-cb2d478a69fb" xsi:type="Serving" />
+    <relationship identifier="id-833c543c3e41" source="id-80ee6a59175b" target="id-9840c0ce779c" xsi:type="Composition" />
+    <relationship identifier="id-8c4c4f347d3f" source="id-f5c7dbd92b7f" target="id-730d0f783af3" xsi:type="Composition" />
+    <relationship identifier="id-8b001f9f97a2" source="id-9783234debdf" target="id-87e933647a76" xsi:type="Serving" />
+    <relationship identifier="id-6418d3b446b4" source="id-633f7623f350" target="id-050ddcaf1f98" xsi:type="Realization" />
+    <relationship identifier="id-456940366db3" source="id-81ad645744b4" target="id-782b51aaa28f" xsi:type="Serving" />
+    <relationship identifier="id-bcb531910455" source="id-782b51aaa28f" target="id-2f98ce500322" xsi:type="Realization" />
+    <relationship identifier="id-40cd5bcbba85" source="id-07d01822f5f1" target="id-059c3213914e" xsi:type="Realization" />
+    <relationship identifier="id-f8aceaee74e0" source="id-a97269b4adfd" target="id-214bfe9d1f6a" xsi:type="Composition" />
+    <relationship identifier="id-4bc514c3eada" source="id-a9a4e69c92b5" target="id-3a57f504cf8b" xsi:type="Serving" />
+    <relationship identifier="id-cedc03b9c256" source="id-6f24db0680f2" target="id-8feb96f10dbb" xsi:type="Serving" />
+    <relationship identifier="id-34f0a7935ff8" source="id-07d01822f5f1" target="id-2c66c4a3f22e" xsi:type="Realization" />
+    <relationship identifier="id-4e0e752184c8" source="id-47748b9d2f2d" target="id-2e736bf6894a" xsi:type="Composition" />
+    <relationship identifier="id-5df229fc08e0" source="id-2c66c4a3f22e" target="id-782b51aaa28f" xsi:type="Serving" />
+    <relationship identifier="id-a3b4c1f35d0b" source="id-6f24db0680f2" target="id-782b51aaa28f" xsi:type="Serving" />
+    <relationship identifier="id-a0f4d06d00da" source="id-49bff92c741a" target="id-8feb96f10dbb" xsi:type="Serving" />
+    <relationship identifier="id-0be0f78b9793" source="id-a99054440ef4" target="id-77923c2a1082" xsi:type="Realization" />
+    <relationship identifier="id-f780408cf0ac" source="id-2c66c4a3f22e" target="id-8feb96f10dbb" xsi:type="Serving" />
+    <relationship identifier="id-0e40e6781f79" source="id-f5c7dbd92b7f" target="id-a2f017c78f06" xsi:type="Composition" />
+    <relationship identifier="id-0703494ad90f" source="id-cb2d478a69fb" target="id-77923c2a1082" xsi:type="Realization" />
+    <relationship identifier="id-808f9d21df37" source="id-f5c7dbd92b7f" target="id-d70d486e8df1" xsi:type="Composition" />
+    <relationship identifier="id-6d045a3d30a8" source="id-99941352ecd5" target="id-b88d6f1e27a0" xsi:type="Influence" />
+    <relationship identifier="id-af20238b4918" source="id-e3483901cc51" target="id-8d7f43a571b5" xsi:type="Serving" />
+    <relationship identifier="id-396402f0ca50" source="id-2c66c4a3f22e" target="id-a99054440ef4" xsi:type="Serving" />
+    <relationship identifier="id-b1a121ab1df2" source="id-8400a6af817a" target="id-deb0f53ea74e" xsi:type="Realization" />
+    <relationship identifier="id-daf1b2161e3a" source="id-ac772b344a85" target="id-1d96b2640902" xsi:type="Realization" />
+    <relationship identifier="id-8f1880876692" source="id-2c66c4a3f22e" target="id-4a55970a336b" xsi:type="Serving" />
+    <relationship identifier="id-8813caacf57c" source="id-87e933647a76" target="id-81ad645744b4" xsi:type="Realization" />
+    <relationship identifier="id-62609c5036c5" source="id-1d96b2640902" target="id-8d7f43a571b5" xsi:type="Serving" />
+    <relationship identifier="id-a8d329a3bd13" source="id-8400a6af817a" target="id-a9a4e69c92b5" xsi:type="Realization" />
+    <relationship identifier="id-b29202fd454c" source="id-d111fc2d941c" target="id-c70ce78aa680" xsi:type="Realization" />
+    <relationship identifier="id-8ba25bcc373b" source="id-49bff92c741a" target="id-782b51aaa28f" xsi:type="Serving" />
+    <relationship identifier="id-5016bf0acea9" source="id-38cbfc854b4b" target="id-214bfe9d1f6a" xsi:type="Realization" />
+    <relationship identifier="id-ee12e91f35c9" source="id-84617035d69d" target="id-1bbbe221e11c" xsi:type="Realization" />
+    <relationship identifier="id-3d31cbf2ab8b" source="id-3412690e1a51" target="id-8feb96f10dbb" xsi:type="Serving" />
+    <relationship identifier="id-4c8041dec208" source="id-9e48ecd2951e" target="id-e161395c79f9" xsi:type="Serving" />
+    <relationship identifier="id-1759f92064a9" source="id-1d96b2640902" target="id-4a55970a336b" xsi:type="Serving" />
+    <relationship identifier="id-e005a202ced8" source="id-3412690e1a51" target="id-87e933647a76" xsi:type="Serving" />
+    <relationship identifier="id-a9c52fd9e48e" source="id-e3483901cc51" target="id-d3899217bf7c" xsi:type="Serving" />
+    <relationship identifier="id-821f6b6f6b06" source="id-3412690e1a51" target="id-8d7f43a571b5" xsi:type="Serving" />
+    <relationship identifier="id-2304ea153ec1" source="id-3a57f504cf8b" target="id-39abb53b7200" xsi:type="Realization" />
+    <relationship identifier="id-6a25bd6ae064" source="id-1bbbe221e11c" target="id-d3899217bf7c" xsi:type="Serving" />
+    <relationship identifier="id-06b25e36fb33" source="id-730d0f783af3" target="id-4a55970a336b" xsi:type="Assignment" />
+    <relationship identifier="id-21a5274f026b" source="id-f5c7dbd92b7f" target="id-b551a88b54dc" xsi:type="Composition" />
+    <relationship identifier="id-fa97254cd4ed" source="id-49bff92c741a" target="id-8d7f43a571b5" xsi:type="Serving" />
+    <relationship identifier="id-2c79c06b8d2e" source="id-f5c7dbd92b7f" target="id-3289fb0c2b68" xsi:type="Composition" />
+    <relationship identifier="id-d072306f0153" source="id-8feb96f10dbb" target="id-1bc20e61c89c" xsi:type="Realization" />
+    <relationship identifier="id-0c3732f454ba" source="id-d3899217bf7c" target="id-214bfe9d1f6a" xsi:type="Realization" />
+    <relationship identifier="id-220799fa4ebd" source="id-be5b9ecb558b" target="id-9e48ecd2951e" xsi:type="Realization" />
+    <relationship identifier="id-02cf1d23058c" source="id-e3483901cc51" target="id-a99054440ef4" xsi:type="Serving" />
+    <relationship identifier="id-077283f1339b" source="id-3a57f504cf8b" target="id-3412690e1a51" xsi:type="Realization" />
+    <relationship identifier="id-418d16439f57" source="id-1d96b2640902" target="id-87e933647a76" xsi:type="Serving" />
+    <relationship identifier="id-32b01bb060bf" source="id-35f2b70fb765" target="id-782b51aaa28f" xsi:type="Serving" />
+    <relationship identifier="id-7fc12c7c289c" source="id-782b51aaa28f" target="id-2e736bf6894a" xsi:type="Realization" />
+    <relationship identifier="id-922f0e908a4f" source="id-5dfba53a9b39" target="id-39abb53b7200" xsi:type="Realization" />
+    <relationship identifier="id-00ab41379f63" source="id-d111fc2d941c" target="id-35f2b70fb765" xsi:type="Realization" />
+    <relationship identifier="id-97c913b68dfd" source="id-84617035d69d" target="id-2e736bf6894a" xsi:type="Realization" />
+    <relationship identifier="id-de8aa344b918" source="id-8feb96f10dbb" target="id-2e736bf6894a" xsi:type="Realization" />
+    <relationship identifier="id-3761d0ba1c59" source="id-38cbfc854b4b" target="id-49bff92c741a" xsi:type="Realization" />
+    <relationship identifier="id-0553ac73c493" source="id-db2a1923eea7" target="id-002c8ec6fb8b" xsi:type="Triggering" />
+    <relationship identifier="id-ef893cd0ee80" source="id-e3483901cc51" target="id-4a55970a336b" xsi:type="Serving" />
+    <relationship identifier="id-c362af3fd690" source="id-35f2b70fb765" target="id-d3899217bf7c" xsi:type="Serving" />
+    <relationship identifier="id-7c2ddab61fff" source="id-8feb96f10dbb" target="id-e3483901cc51" xsi:type="Realization" />
+    <relationship identifier="id-eb48f21d21fa" source="id-84617035d69d" target="id-3fb5a561005b" xsi:type="Realization" />
+    <relationship identifier="id-07e576266302" source="id-35f2b70fb765" target="id-8d7f43a571b5" xsi:type="Serving" />
+    <relationship identifier="id-5a183337ad6d" source="id-ac772b344a85" target="id-9840c0ce779c" xsi:type="Realization" />
+    <relationship identifier="id-ea1f01d8fecd" source="id-b997a2c1ab78" target="id-050ddcaf1f98" xsi:type="Composition" />
+    <relationship identifier="id-6606f4e5ecd0" source="id-6c715ace3ef6" target="id-059c3213914e" xsi:type="Composition" />
+    <relationship identifier="id-22063823064e" source="id-be5b9ecb558b" target="id-9dad8292f634" xsi:type="Realization" />
+    <relationship identifier="id-e81ad13c1722" source="id-e3483901cc51" target="id-cb2d478a69fb" xsi:type="Serving" />
+    <relationship identifier="id-955e8cf54eb7" source="id-d27b52bd44ca" target="id-deb0f53ea74e" xsi:type="Composition" />
+    <relationship identifier="id-81ac6cdb1115" source="id-99941352ecd5" target="id-8feb96f10dbb" xsi:type="Association" />
+    <relationship identifier="id-1f825d439fb5" source="id-1d96b2640902" target="id-a99054440ef4" xsi:type="Serving" />
+    <relationship identifier="id-2ce254545e9e" source="id-35f2b70fb765" target="id-a99054440ef4" xsi:type="Serving" />
+    <relationship identifier="id-9a8a11809206" source="id-f5c7dbd92b7f" target="id-249c61d338ec" xsi:type="Composition" />
+    <relationship identifier="id-0d4ae23d5430" source="id-6c715ace3ef6" target="id-9dad8292f634" xsi:type="Composition" />
+    <relationship identifier="id-917d27454d46" source="id-77b0cf0903a4" target="id-6f24db0680f2" xsi:type="Realization" />
+    <relationship identifier="id-51c63507fb5f" source="id-730d0f783af3" target="id-8d7f43a571b5" xsi:type="Assignment" />
+    <relationship identifier="id-4f1160713d50" source="id-99941352ecd5" target="id-002c8ec6fb8b" xsi:type="Realization" />
+    <relationship identifier="id-10075e9cfab1" source="id-d3899217bf7c" target="id-77923c2a1082" xsi:type="Realization" />
+    <relationship identifier="id-384fc69a743b" source="id-80ee6a59175b" target="id-1bc20e61c89c" xsi:type="Composition" />
+    <relationship identifier="id-19559cfa549e" source="id-d27b52bd44ca" target="id-39abb53b7200" xsi:type="Composition" />
+    <relationship identifier="id-4cec2540f9ae" source="id-f5c7dbd92b7f" target="id-2510bfd532a2" xsi:type="Composition" />
+    <relationship identifier="id-6fcaa3bb7986" source="id-5dfba53a9b39" target="id-9783234debdf" xsi:type="Realization" />
+    <relationship identifier="id-c84f2fbf7d83" source="id-f5c7dbd92b7f" target="id-5de3b23f2351" xsi:type="Composition" />
+    <relationship identifier="id-4a649a45a782" source="id-a97269b4adfd" target="id-c70ce78aa680" xsi:type="Composition" />
+    <relationship identifier="id-259a19af4e87" source="id-b997a2c1ab78" target="id-9e8164bb44ad" xsi:type="Composition" />
+  </relationships>
+  <organizations>
+    <item>
+      <label xml:lang="en">Strategy</label>
+      <item identifierRef="id-2e736bf6894a" />
+      <item identifierRef="id-1bc20e61c89c" />
+      <item identifierRef="id-9dad8292f634" />
+      <item identifierRef="id-47748b9d2f2d" />
+      <item identifierRef="id-050ddcaf1f98" />
+      <item identifierRef="id-9e8164bb44ad" />
+      <item identifierRef="id-c70ce78aa680" />
+      <item identifierRef="id-80ee6a59175b" />
+      <item identifierRef="id-39abb53b7200" />
+      <item identifierRef="id-059c3213914e" />
+      <item identifierRef="id-214bfe9d1f6a" />
+      <item identifierRef="id-77923c2a1082" />
+      <item identifierRef="id-d27b52bd44ca" />
+      <item identifierRef="id-a97269b4adfd" />
+      <item identifierRef="id-6c715ace3ef6" />
+      <item identifierRef="id-deb0f53ea74e" />
+      <item identifierRef="id-3fb5a561005b" />
+      <item identifierRef="id-9840c0ce779c" />
+      <item identifierRef="id-b997a2c1ab78" />
+    </item>
+    <item>
+      <label xml:lang="en">Business</label>
+      <item identifierRef="id-8d7f43a571b5" />
+      <item identifierRef="id-3289fb0c2b68" />
+      <item identifierRef="id-5de3b23f2351" />
+      <item identifierRef="id-d70d486e8df1" />
+      <item identifierRef="id-a2f017c78f06" />
+      <item identifierRef="id-b551a88b54dc" />
+      <item identifierRef="id-4a55970a336b" />
+      <item identifierRef="id-730d0f783af3" />
+      <item identifierRef="id-249c61d338ec" />
+      <item identifierRef="id-2510bfd532a2" />
+      <item identifierRef="id-e161395c79f9" />
+      <item identifierRef="id-f5c7dbd92b7f" />
+    </item>
+    <item>
+      <label xml:lang="en">Application</label>
+      <item identifierRef="id-77b0cf0903a4" />
+      <item identifierRef="id-cb2d478a69fb" />
+      <item identifierRef="id-9e48ecd2951e" />
+      <item identifierRef="id-2f98ce500322" />
+      <item identifierRef="id-3412690e1a51" />
+      <item identifierRef="id-1bbbe221e11c" />
+      <item identifierRef="id-38cbfc854b4b" />
+      <item identifierRef="id-5dfba53a9b39" />
+      <item identifierRef="id-8feb96f10dbb" />
+      <item identifierRef="id-9783234debdf" />
+      <item identifierRef="id-49bff92c741a" />
+      <item identifierRef="id-3a57f504cf8b" />
+      <item identifierRef="id-782b51aaa28f" />
+      <item identifierRef="id-d111fc2d941c" />
+      <item identifierRef="id-8400a6af817a" />
+      <item identifierRef="id-e3483901cc51" />
+      <item identifierRef="id-84617035d69d" />
+      <item identifierRef="id-87e933647a76" />
+      <item identifierRef="id-2c66c4a3f22e" />
+      <item identifierRef="id-07d01822f5f1" />
+      <item identifierRef="id-ac772b344a85" />
+      <item identifierRef="id-6f24db0680f2" />
+      <item identifierRef="id-1d96b2640902" />
+      <item identifierRef="id-a99054440ef4" />
+      <item identifierRef="id-81ad645744b4" />
+      <item identifierRef="id-a9a4e69c92b5" />
+      <item identifierRef="id-633f7623f350" />
+      <item identifierRef="id-35f2b70fb765" />
+      <item identifierRef="id-be5b9ecb558b" />
+      <item identifierRef="id-d3899217bf7c" />
+    </item>
+    <item>
+      <label xml:lang="en">Motivation</label>
+      <item identifierRef="id-b88d6f1e27a0" />
+    </item>
+    <item>
+      <label xml:lang="en">Implementation &amp; Migration</label>
+      <item identifierRef="id-db2a1923eea7" />
+      <item identifierRef="id-002c8ec6fb8b" />
+      <item identifierRef="id-99941352ecd5" />
+    </item>
+    <item>
+      <label xml:lang="en">Relations</label>
+      <item identifierRef="id-fe0942eb8845" />
+      <item identifierRef="id-43f23d242340" />
+      <item identifierRef="id-999b5640e757" />
+      <item identifierRef="id-6840c48c69b8" />
+      <item identifierRef="id-d301378aff32" />
+      <item identifierRef="id-e540c69191b7" />
+      <item identifierRef="id-87b0a95472df" />
+      <item identifierRef="id-06d17fd21c52" />
+      <item identifierRef="id-833c543c3e41" />
+      <item identifierRef="id-8c4c4f347d3f" />
+      <item identifierRef="id-8b001f9f97a2" />
+      <item identifierRef="id-6418d3b446b4" />
+      <item identifierRef="id-456940366db3" />
+      <item identifierRef="id-bcb531910455" />
+      <item identifierRef="id-40cd5bcbba85" />
+      <item identifierRef="id-f8aceaee74e0" />
+      <item identifierRef="id-4bc514c3eada" />
+      <item identifierRef="id-cedc03b9c256" />
+      <item identifierRef="id-34f0a7935ff8" />
+      <item identifierRef="id-4e0e752184c8" />
+      <item identifierRef="id-5df229fc08e0" />
+      <item identifierRef="id-a3b4c1f35d0b" />
+      <item identifierRef="id-a0f4d06d00da" />
+      <item identifierRef="id-0be0f78b9793" />
+      <item identifierRef="id-f780408cf0ac" />
+      <item identifierRef="id-0e40e6781f79" />
+      <item identifierRef="id-0703494ad90f" />
+      <item identifierRef="id-808f9d21df37" />
+      <item identifierRef="id-6d045a3d30a8" />
+      <item identifierRef="id-af20238b4918" />
+      <item identifierRef="id-396402f0ca50" />
+      <item identifierRef="id-b1a121ab1df2" />
+      <item identifierRef="id-daf1b2161e3a" />
+      <item identifierRef="id-8f1880876692" />
+      <item identifierRef="id-8813caacf57c" />
+      <item identifierRef="id-62609c5036c5" />
+      <item identifierRef="id-a8d329a3bd13" />
+      <item identifierRef="id-b29202fd454c" />
+      <item identifierRef="id-8ba25bcc373b" />
+      <item identifierRef="id-5016bf0acea9" />
+      <item identifierRef="id-ee12e91f35c9" />
+      <item identifierRef="id-3d31cbf2ab8b" />
+      <item identifierRef="id-4c8041dec208" />
+      <item identifierRef="id-1759f92064a9" />
+      <item identifierRef="id-e005a202ced8" />
+      <item identifierRef="id-a9c52fd9e48e" />
+      <item identifierRef="id-821f6b6f6b06" />
+      <item identifierRef="id-2304ea153ec1" />
+      <item identifierRef="id-6a25bd6ae064" />
+      <item identifierRef="id-06b25e36fb33" />
+      <item identifierRef="id-21a5274f026b" />
+      <item identifierRef="id-fa97254cd4ed" />
+      <item identifierRef="id-2c79c06b8d2e" />
+      <item identifierRef="id-d072306f0153" />
+      <item identifierRef="id-0c3732f454ba" />
+      <item identifierRef="id-220799fa4ebd" />
+      <item identifierRef="id-02cf1d23058c" />
+      <item identifierRef="id-077283f1339b" />
+      <item identifierRef="id-418d16439f57" />
+      <item identifierRef="id-32b01bb060bf" />
+      <item identifierRef="id-7fc12c7c289c" />
+      <item identifierRef="id-922f0e908a4f" />
+      <item identifierRef="id-00ab41379f63" />
+      <item identifierRef="id-97c913b68dfd" />
+      <item identifierRef="id-de8aa344b918" />
+      <item identifierRef="id-3761d0ba1c59" />
+      <item identifierRef="id-0553ac73c493" />
+      <item identifierRef="id-ef893cd0ee80" />
+      <item identifierRef="id-c362af3fd690" />
+      <item identifierRef="id-7c2ddab61fff" />
+      <item identifierRef="id-eb48f21d21fa" />
+      <item identifierRef="id-07e576266302" />
+      <item identifierRef="id-5a183337ad6d" />
+      <item identifierRef="id-ea1f01d8fecd" />
+      <item identifierRef="id-6606f4e5ecd0" />
+      <item identifierRef="id-22063823064e" />
+      <item identifierRef="id-e81ad13c1722" />
+      <item identifierRef="id-955e8cf54eb7" />
+      <item identifierRef="id-81ac6cdb1115" />
+      <item identifierRef="id-1f825d439fb5" />
+      <item identifierRef="id-2ce254545e9e" />
+      <item identifierRef="id-9a8a11809206" />
+      <item identifierRef="id-0d4ae23d5430" />
+      <item identifierRef="id-917d27454d46" />
+      <item identifierRef="id-51c63507fb5f" />
+      <item identifierRef="id-4f1160713d50" />
+      <item identifierRef="id-10075e9cfab1" />
+      <item identifierRef="id-384fc69a743b" />
+      <item identifierRef="id-19559cfa549e" />
+      <item identifierRef="id-4cec2540f9ae" />
+      <item identifierRef="id-6fcaa3bb7986" />
+      <item identifierRef="id-c84f2fbf7d83" />
+      <item identifierRef="id-4a649a45a782" />
+      <item identifierRef="id-259a19af4e87" />
+    </item>
+    <item>
+      <label xml:lang="en">Views</label>
+      <item identifierRef="v-application-cooperation" />
+      <item identifierRef="v-capability-map" />
+      <item identifierRef="v-retirement" />
+    </item>
+  </organizations>
+  <propertyDefinitions>
+    <propertyDefinition identifier="propid-1" type="string">
+      <name>@id</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propid-2" type="string">
+      <name>arch:architectureState</name>
+    </propertyDefinition>
+  </propertyDefinitions>
+  <views>
+    <diagrams>
+      <view identifier="v-application-cooperation" xsi:type="Diagram">
+        <name xml:lang="en">Application Cooperation - Booking</name>
+        <node identifier="v-application-cooperation-n0" elementRef="id-8feb96f10dbb" xsi:type="Element" x="1536" y="629" w="190" h="68">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-application-cooperation-n1" elementRef="id-782b51aaa28f" xsi:type="Element" x="1536" y="463" w="190" h="68">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-application-cooperation-n2" elementRef="id-87e933647a76" xsi:type="Element" x="1034" y="396" w="190" h="68">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-application-cooperation-n3" elementRef="id-3a57f504cf8b" xsi:type="Element" x="532" y="670" w="190" h="68">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-application-cooperation-n4" elementRef="id-8400a6af817a" xsi:type="Element" x="30" y="670" w="190" h="68">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-application-cooperation-n5" elementRef="id-ac772b344a85" xsi:type="Element" x="532" y="446" w="190" h="68">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-application-cooperation-n6" elementRef="id-5dfba53a9b39" xsi:type="Element" x="532" y="346" w="190" h="68">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-application-cooperation-n7" elementRef="id-d111fc2d941c" xsi:type="Element" x="1034" y="296" w="190" h="68">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-application-cooperation-n8" elementRef="id-a99054440ef4" xsi:type="Element" x="2038" y="363" w="190" h="68">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-application-cooperation-n9" elementRef="id-d3899217bf7c" xsi:type="Element" x="2038" y="629" w="190" h="68">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-application-cooperation-n10" elementRef="id-cb2d478a69fb" xsi:type="Element" x="2038" y="729" w="190" h="68">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-application-cooperation-n11" elementRef="id-07d01822f5f1" xsi:type="Element" x="1034" y="496" w="190" h="68">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-application-cooperation-n12" elementRef="id-38cbfc854b4b" xsi:type="Element" x="1034" y="696" w="190" h="68">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-application-cooperation-n13" elementRef="id-be5b9ecb558b" xsi:type="Element" x="1787" y="130" w="190" h="68">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-application-cooperation-n14" elementRef="id-77b0cf0903a4" xsi:type="Element" x="1034" y="596" w="190" h="68">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-application-cooperation-n15" elementRef="id-633f7623f350" xsi:type="Element" x="2038" y="30" w="190" h="68">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-application-cooperation-n16" elementRef="id-84617035d69d" xsi:type="Element" x="1536" y="729" w="190" h="68">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-application-cooperation-n17" elementRef="id-e3483901cc51" xsi:type="Element" x="1787" y="629" w="190" h="68">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-application-cooperation-n18" elementRef="id-2f98ce500322" xsi:type="Element" x="1787" y="363" w="190" h="68">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-application-cooperation-n19" elementRef="id-81ad645744b4" xsi:type="Element" x="1285" y="396" w="190" h="68">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-application-cooperation-n20" elementRef="id-3412690e1a51" xsi:type="Element" x="783" y="670" w="190" h="68">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-application-cooperation-n21" elementRef="id-a9a4e69c92b5" xsi:type="Element" x="281" y="670" w="190" h="68">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-application-cooperation-n22" elementRef="id-1d96b2640902" xsi:type="Element" x="783" y="446" w="190" h="68">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-application-cooperation-n23" elementRef="id-9783234debdf" xsi:type="Element" x="783" y="346" w="190" h="68">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-application-cooperation-n24" elementRef="id-35f2b70fb765" xsi:type="Element" x="1285" y="296" w="190" h="68">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-application-cooperation-n25" elementRef="id-2c66c4a3f22e" xsi:type="Element" x="1285" y="496" w="190" h="68">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-application-cooperation-n26" elementRef="id-49bff92c741a" xsi:type="Element" x="1285" y="696" w="190" h="68">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-application-cooperation-n27" elementRef="id-9e48ecd2951e" xsi:type="Element" x="2038" y="130" w="190" h="68">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-application-cooperation-n28" elementRef="id-6f24db0680f2" xsi:type="Element" x="1285" y="596" w="190" h="68">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-application-cooperation-n29" elementRef="id-1bbbe221e11c" xsi:type="Element" x="1787" y="729" w="190" h="68">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <connection identifier="v-application-cooperation-id-7c2ddab61fff" relationshipRef="id-7c2ddab61fff" xsi:type="Relationship" source="v-application-cooperation-n0" target="v-application-cooperation-n17">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+        <connection identifier="v-application-cooperation-id-bcb531910455" relationshipRef="id-bcb531910455" xsi:type="Relationship" source="v-application-cooperation-n1" target="v-application-cooperation-n18">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="1744" y="497" />
+          <bendpoint x="1744" y="397" />
+          <bendpoint x="1769" y="397" />
+        </connection>
+        <connection identifier="v-application-cooperation-id-8813caacf57c" relationshipRef="id-8813caacf57c" xsi:type="Relationship" source="v-application-cooperation-n2" target="v-application-cooperation-n19">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+        <connection identifier="v-application-cooperation-id-077283f1339b" relationshipRef="id-077283f1339b" xsi:type="Relationship" source="v-application-cooperation-n3" target="v-application-cooperation-n20">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+        <connection identifier="v-application-cooperation-id-a8d329a3bd13" relationshipRef="id-a8d329a3bd13" xsi:type="Relationship" source="v-application-cooperation-n4" target="v-application-cooperation-n21">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+        <connection identifier="v-application-cooperation-id-daf1b2161e3a" relationshipRef="id-daf1b2161e3a" xsi:type="Relationship" source="v-application-cooperation-n5" target="v-application-cooperation-n22">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+        <connection identifier="v-application-cooperation-id-6fcaa3bb7986" relationshipRef="id-6fcaa3bb7986" xsi:type="Relationship" source="v-application-cooperation-n6" target="v-application-cooperation-n23">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+        <connection identifier="v-application-cooperation-id-00ab41379f63" relationshipRef="id-00ab41379f63" xsi:type="Relationship" source="v-application-cooperation-n7" target="v-application-cooperation-n24">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+        <connection identifier="v-application-cooperation-id-34f0a7935ff8" relationshipRef="id-34f0a7935ff8" xsi:type="Relationship" source="v-application-cooperation-n11" target="v-application-cooperation-n25">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+        <connection identifier="v-application-cooperation-id-3761d0ba1c59" relationshipRef="id-3761d0ba1c59" xsi:type="Relationship" source="v-application-cooperation-n12" target="v-application-cooperation-n26">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+        <connection identifier="v-application-cooperation-id-220799fa4ebd" relationshipRef="id-220799fa4ebd" xsi:type="Relationship" source="v-application-cooperation-n13" target="v-application-cooperation-n27">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+        <connection identifier="v-application-cooperation-id-917d27454d46" relationshipRef="id-917d27454d46" xsi:type="Relationship" source="v-application-cooperation-n14" target="v-application-cooperation-n28">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+        <connection identifier="v-application-cooperation-id-ee12e91f35c9" relationshipRef="id-ee12e91f35c9" xsi:type="Relationship" source="v-application-cooperation-n16" target="v-application-cooperation-n29">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+        <connection identifier="v-application-cooperation-id-02cf1d23058c" relationshipRef="id-02cf1d23058c" xsi:type="Relationship" source="v-application-cooperation-n17" target="v-application-cooperation-n8">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="1995" y="663" />
+          <bendpoint x="1995" y="640" />
+          <bendpoint x="2014" y="640" />
+          <bendpoint x="2014" y="397" />
+          <bendpoint x="2020" y="397" />
+        </connection>
+        <connection identifier="v-application-cooperation-id-a9c52fd9e48e" relationshipRef="id-a9c52fd9e48e" xsi:type="Relationship" source="v-application-cooperation-n17" target="v-application-cooperation-n9">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+        <connection identifier="v-application-cooperation-id-e81ad13c1722" relationshipRef="id-e81ad13c1722" xsi:type="Relationship" source="v-application-cooperation-n17" target="v-application-cooperation-n10">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="1995" y="663" />
+          <bendpoint x="1995" y="763" />
+          <bendpoint x="2020" y="763" />
+        </connection>
+        <connection identifier="v-application-cooperation-id-456940366db3" relationshipRef="id-456940366db3" xsi:type="Relationship" source="v-application-cooperation-n19" target="v-application-cooperation-n1">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="1493" y="430" />
+          <bendpoint x="1493" y="497" />
+          <bendpoint x="1518" y="497" />
+        </connection>
+        <connection identifier="v-application-cooperation-id-3d31cbf2ab8b" relationshipRef="id-3d31cbf2ab8b" xsi:type="Relationship" source="v-application-cooperation-n20" target="v-application-cooperation-n0">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="1254" y="704" />
+          <bendpoint x="1254" y="663" />
+        </connection>
+        <connection identifier="v-application-cooperation-id-e005a202ced8" relationshipRef="id-e005a202ced8" xsi:type="Relationship" source="v-application-cooperation-n20" target="v-application-cooperation-n2">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="991" y="704" />
+          <bendpoint x="991" y="676" />
+          <bendpoint x="1003" y="676" />
+          <bendpoint x="1003" y="430" />
+          <bendpoint x="1016" y="430" />
+        </connection>
+        <connection identifier="v-application-cooperation-id-4bc514c3eada" relationshipRef="id-4bc514c3eada" xsi:type="Relationship" source="v-application-cooperation-n21" target="v-application-cooperation-n3">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+        <connection identifier="v-application-cooperation-id-1f825d439fb5" relationshipRef="id-1f825d439fb5" xsi:type="Relationship" source="v-application-cooperation-n22" target="v-application-cooperation-n8">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="991" y="480" />
+          <bendpoint x="991" y="580" />
+          <bendpoint x="2020" y="580" />
+          <bendpoint x="2020" y="397" />
+        </connection>
+        <connection identifier="v-application-cooperation-id-87b0a95472df" relationshipRef="id-87b0a95472df" xsi:type="Relationship" source="v-application-cooperation-n22" target="v-application-cooperation-n0">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="991" y="480" />
+          <bendpoint x="991" y="485" />
+          <bendpoint x="1495" y="485" />
+          <bendpoint x="1495" y="663" />
+          <bendpoint x="1518" y="663" />
+        </connection>
+        <connection identifier="v-application-cooperation-id-418d16439f57" relationshipRef="id-418d16439f57" xsi:type="Relationship" source="v-application-cooperation-n22" target="v-application-cooperation-n2">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="1004" y="480" />
+          <bendpoint x="1004" y="430" />
+        </connection>
+        <connection identifier="v-application-cooperation-id-8b001f9f97a2" relationshipRef="id-8b001f9f97a2" xsi:type="Relationship" source="v-application-cooperation-n23" target="v-application-cooperation-n2">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="1004" y="380" />
+          <bendpoint x="1004" y="430" />
+        </connection>
+        <connection identifier="v-application-cooperation-id-2ce254545e9e" relationshipRef="id-2ce254545e9e" xsi:type="Relationship" source="v-application-cooperation-n24" target="v-application-cooperation-n8">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="1493" y="330" />
+          <bendpoint x="1493" y="313" />
+          <bendpoint x="2020" y="313" />
+          <bendpoint x="2020" y="397" />
+        </connection>
+        <connection identifier="v-application-cooperation-id-c362af3fd690" relationshipRef="id-c362af3fd690" xsi:type="Relationship" source="v-application-cooperation-n24" target="v-application-cooperation-n9">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="1493" y="330" />
+          <bendpoint x="2001" y="330" />
+          <bendpoint x="2001" y="663" />
+          <bendpoint x="2020" y="663" />
+        </connection>
+        <connection identifier="v-application-cooperation-id-32b01bb060bf" relationshipRef="id-32b01bb060bf" xsi:type="Relationship" source="v-application-cooperation-n24" target="v-application-cooperation-n1">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="1493" y="330" />
+          <bendpoint x="1493" y="346" />
+          <bendpoint x="1518" y="346" />
+          <bendpoint x="1518" y="497" />
+        </connection>
+        <connection identifier="v-application-cooperation-id-396402f0ca50" relationshipRef="id-396402f0ca50" xsi:type="Relationship" source="v-application-cooperation-n25" target="v-application-cooperation-n8">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="1493" y="530" />
+          <bendpoint x="1493" y="542" />
+          <bendpoint x="2020" y="542" />
+          <bendpoint x="2020" y="397" />
+        </connection>
+        <connection identifier="v-application-cooperation-id-f780408cf0ac" relationshipRef="id-f780408cf0ac" xsi:type="Relationship" source="v-application-cooperation-n25" target="v-application-cooperation-n0">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="1493" y="530" />
+          <bendpoint x="1493" y="553" />
+          <bendpoint x="1518" y="553" />
+          <bendpoint x="1518" y="663" />
+        </connection>
+        <connection identifier="v-application-cooperation-id-5df229fc08e0" relationshipRef="id-5df229fc08e0" xsi:type="Relationship" source="v-application-cooperation-n25" target="v-application-cooperation-n1">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="1506" y="530" />
+          <bendpoint x="1506" y="497" />
+        </connection>
+        <connection identifier="v-application-cooperation-id-a0f4d06d00da" relationshipRef="id-a0f4d06d00da" xsi:type="Relationship" source="v-application-cooperation-n26" target="v-application-cooperation-n0">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="1493" y="730" />
+          <bendpoint x="1493" y="663" />
+          <bendpoint x="1518" y="663" />
+        </connection>
+        <connection identifier="v-application-cooperation-id-8ba25bcc373b" relationshipRef="id-8ba25bcc373b" xsi:type="Relationship" source="v-application-cooperation-n26" target="v-application-cooperation-n1">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="1493" y="730" />
+          <bendpoint x="1493" y="713" />
+          <bendpoint x="1516" y="713" />
+          <bendpoint x="1516" y="497" />
+          <bendpoint x="1518" y="497" />
+        </connection>
+        <connection identifier="v-application-cooperation-id-cedc03b9c256" relationshipRef="id-cedc03b9c256" xsi:type="Relationship" source="v-application-cooperation-n28" target="v-application-cooperation-n0">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="1506" y="630" />
+          <bendpoint x="1506" y="663" />
+        </connection>
+        <connection identifier="v-application-cooperation-id-a3b4c1f35d0b" relationshipRef="id-a3b4c1f35d0b" xsi:type="Relationship" source="v-application-cooperation-n28" target="v-application-cooperation-n1">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="1493" y="630" />
+          <bendpoint x="1493" y="612" />
+          <bendpoint x="1518" y="612" />
+          <bendpoint x="1518" y="497" />
+        </connection>
+        <connection identifier="v-application-cooperation-id-6a25bd6ae064" relationshipRef="id-6a25bd6ae064" xsi:type="Relationship" source="v-application-cooperation-n29" target="v-application-cooperation-n9">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="1995" y="763" />
+          <bendpoint x="1995" y="746" />
+          <bendpoint x="2020" y="746" />
+          <bendpoint x="2020" y="663" />
+        </connection>
+        <connection identifier="v-application-cooperation-id-06d17fd21c52" relationshipRef="id-06d17fd21c52" xsi:type="Relationship" source="v-application-cooperation-n29" target="v-application-cooperation-n10">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+      </view>
+      <view identifier="v-capability-map" xsi:type="Diagram">
+        <name xml:lang="en">Capability Map</name>
+        <node identifier="v-capability-map-n0" elementRef="id-d27b52bd44ca" xsi:type="Element" x="180" y="40" w="260" h="68">
+          <style>
+            <fillColor r="245" g="222" b="170" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-capability-map-n1" elementRef="id-deb0f53ea74e" xsi:type="Element" x="50" y="165" w="160" h="68">
+          <style>
+            <fillColor r="245" g="222" b="170" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-capability-map-n2" elementRef="id-39abb53b7200" xsi:type="Element" x="230" y="165" w="160" h="68">
+          <style>
+            <fillColor r="245" g="222" b="170" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-capability-map-n3" elementRef="id-3fb5a561005b" xsi:type="Element" x="410" y="165" w="160" h="68">
+          <style>
+            <fillColor r="245" g="222" b="170" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-capability-map-n4" elementRef="id-80ee6a59175b" xsi:type="Element" x="760" y="40" w="260" h="68">
+          <style>
+            <fillColor r="245" g="222" b="170" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-capability-map-n5" elementRef="id-9840c0ce779c" xsi:type="Element" x="720" y="165" w="160" h="68">
+          <style>
+            <fillColor r="245" g="222" b="170" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-capability-map-n6" elementRef="id-1bc20e61c89c" xsi:type="Element" x="900" y="165" w="160" h="68">
+          <style>
+            <fillColor r="245" g="222" b="170" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-capability-map-n7" elementRef="id-47748b9d2f2d" xsi:type="Element" x="180" y="270" w="260" h="68">
+          <style>
+            <fillColor r="245" g="222" b="170" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-capability-map-n8" elementRef="id-77923c2a1082" xsi:type="Element" x="140" y="395" w="160" h="68">
+          <style>
+            <fillColor r="245" g="222" b="170" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-capability-map-n9" elementRef="id-2e736bf6894a" xsi:type="Element" x="320" y="395" w="160" h="68">
+          <style>
+            <fillColor r="245" g="222" b="170" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-capability-map-n10" elementRef="id-a97269b4adfd" xsi:type="Element" x="760" y="270" w="260" h="68">
+          <style>
+            <fillColor r="245" g="222" b="170" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-capability-map-n11" elementRef="id-c70ce78aa680" xsi:type="Element" x="720" y="395" w="160" h="68">
+          <style>
+            <fillColor r="245" g="222" b="170" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-capability-map-n12" elementRef="id-214bfe9d1f6a" xsi:type="Element" x="900" y="395" w="160" h="68">
+          <style>
+            <fillColor r="245" g="222" b="170" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-capability-map-n13" elementRef="id-6c715ace3ef6" xsi:type="Element" x="180" y="500" w="260" h="68">
+          <style>
+            <fillColor r="245" g="222" b="170" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-capability-map-n14" elementRef="id-9dad8292f634" xsi:type="Element" x="140" y="625" w="160" h="68">
+          <style>
+            <fillColor r="245" g="222" b="170" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-capability-map-n15" elementRef="id-059c3213914e" xsi:type="Element" x="320" y="625" w="160" h="68">
+          <style>
+            <fillColor r="245" g="222" b="170" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-capability-map-n16" elementRef="id-b997a2c1ab78" xsi:type="Element" x="760" y="500" w="260" h="68">
+          <style>
+            <fillColor r="245" g="222" b="170" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-capability-map-n17" elementRef="id-9e8164bb44ad" xsi:type="Element" x="720" y="625" w="160" h="68">
+          <style>
+            <fillColor r="245" g="222" b="170" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-capability-map-n18" elementRef="id-050ddcaf1f98" xsi:type="Element" x="900" y="625" w="160" h="68">
+          <style>
+            <fillColor r="245" g="222" b="170" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <connection identifier="v-capability-map-id-955e8cf54eb7" relationshipRef="id-955e8cf54eb7" xsi:type="Relationship" source="v-capability-map-n0" target="v-capability-map-n1">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="310" y="138" />
+          <bendpoint x="130" y="138" />
+        </connection>
+        <connection identifier="v-capability-map-id-19559cfa549e" relationshipRef="id-19559cfa549e" xsi:type="Relationship" source="v-capability-map-n0" target="v-capability-map-n2">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="310" y="138" />
+          <bendpoint x="310" y="138" />
+        </connection>
+        <connection identifier="v-capability-map-id-6840c48c69b8" relationshipRef="id-6840c48c69b8" xsi:type="Relationship" source="v-capability-map-n0" target="v-capability-map-n3">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="310" y="138" />
+          <bendpoint x="490" y="138" />
+        </connection>
+        <connection identifier="v-capability-map-id-833c543c3e41" relationshipRef="id-833c543c3e41" xsi:type="Relationship" source="v-capability-map-n4" target="v-capability-map-n5">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="890" y="138" />
+          <bendpoint x="800" y="138" />
+        </connection>
+        <connection identifier="v-capability-map-id-384fc69a743b" relationshipRef="id-384fc69a743b" xsi:type="Relationship" source="v-capability-map-n4" target="v-capability-map-n6">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="890" y="138" />
+          <bendpoint x="980" y="138" />
+        </connection>
+        <connection identifier="v-capability-map-id-fe0942eb8845" relationshipRef="id-fe0942eb8845" xsi:type="Relationship" source="v-capability-map-n7" target="v-capability-map-n8">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="310" y="368" />
+          <bendpoint x="220" y="368" />
+        </connection>
+        <connection identifier="v-capability-map-id-4e0e752184c8" relationshipRef="id-4e0e752184c8" xsi:type="Relationship" source="v-capability-map-n7" target="v-capability-map-n9">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="310" y="368" />
+          <bendpoint x="400" y="368" />
+        </connection>
+        <connection identifier="v-capability-map-id-4a649a45a782" relationshipRef="id-4a649a45a782" xsi:type="Relationship" source="v-capability-map-n10" target="v-capability-map-n11">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="890" y="368" />
+          <bendpoint x="800" y="368" />
+        </connection>
+        <connection identifier="v-capability-map-id-f8aceaee74e0" relationshipRef="id-f8aceaee74e0" xsi:type="Relationship" source="v-capability-map-n10" target="v-capability-map-n12">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="890" y="368" />
+          <bendpoint x="980" y="368" />
+        </connection>
+        <connection identifier="v-capability-map-id-0d4ae23d5430" relationshipRef="id-0d4ae23d5430" xsi:type="Relationship" source="v-capability-map-n13" target="v-capability-map-n14">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="310" y="598" />
+          <bendpoint x="220" y="598" />
+        </connection>
+        <connection identifier="v-capability-map-id-6606f4e5ecd0" relationshipRef="id-6606f4e5ecd0" xsi:type="Relationship" source="v-capability-map-n13" target="v-capability-map-n15">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="310" y="598" />
+          <bendpoint x="400" y="598" />
+        </connection>
+        <connection identifier="v-capability-map-id-259a19af4e87" relationshipRef="id-259a19af4e87" xsi:type="Relationship" source="v-capability-map-n16" target="v-capability-map-n17">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="890" y="598" />
+          <bendpoint x="800" y="598" />
+        </connection>
+        <connection identifier="v-capability-map-id-ea1f01d8fecd" relationshipRef="id-ea1f01d8fecd" xsi:type="Relationship" source="v-capability-map-n16" target="v-capability-map-n18">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="890" y="598" />
+          <bendpoint x="980" y="598" />
+        </connection>
+      </view>
+      <view identifier="v-retirement" xsi:type="Diagram">
+        <name xml:lang="en">Reservation Platform Retirement</name>
+        <node identifier="v-retirement-n0" elementRef="id-8feb96f10dbb" xsi:type="Element" x="40" y="260" w="230" h="72">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-retirement-n1" elementRef="id-782b51aaa28f" xsi:type="Element" x="900" y="260" w="230" h="72">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-retirement-n2" elementRef="id-e3483901cc51" xsi:type="Element" x="40" y="420" w="230" h="72">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-retirement-n3" elementRef="id-2f98ce500322" xsi:type="Element" x="900" y="420" w="230" h="72">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-retirement-n4" elementRef="id-99941352ecd5" xsi:type="Element" x="470" y="260" w="230" h="72">
+          <style>
+            <fillColor r="255" g="224" b="224" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-retirement-n5" elementRef="id-db2a1923eea7" xsi:type="Element" x="40" y="60" w="230" h="72">
+          <style>
+            <fillColor r="255" g="224" b="224" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-retirement-n6" elementRef="id-002c8ec6fb8b" xsi:type="Element" x="900" y="60" w="230" h="72">
+          <style>
+            <fillColor r="255" g="224" b="224" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="v-retirement-n7" elementRef="id-b88d6f1e27a0" xsi:type="Element" x="470" y="500" w="230" h="72">
+          <style>
+            <fillColor r="204" g="204" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <connection identifier="v-retirement-id-7c2ddab61fff" relationshipRef="id-7c2ddab61fff" xsi:type="Relationship" source="v-retirement-n0" target="v-retirement-n2">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+        <connection identifier="v-retirement-id-bcb531910455" relationshipRef="id-bcb531910455" xsi:type="Relationship" source="v-retirement-n1" target="v-retirement-n3">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+        <connection identifier="v-retirement-id-4f1160713d50" relationshipRef="id-4f1160713d50" xsi:type="Relationship" source="v-retirement-n4" target="v-retirement-n6">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="585" y="195" />
+          <bendpoint x="1015" y="195" />
+        </connection>
+        <connection identifier="v-retirement-id-81ac6cdb1115" relationshipRef="id-81ac6cdb1115" xsi:type="Relationship" source="v-retirement-n4" target="v-retirement-n0">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+        <connection identifier="v-retirement-id-6d045a3d30a8" relationshipRef="id-6d045a3d30a8" xsi:type="Relationship" source="v-retirement-n4" target="v-retirement-n7">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+        <connection identifier="v-retirement-id-0553ac73c493" relationshipRef="id-0553ac73c493" xsi:type="Relationship" source="v-retirement-n5" target="v-retirement-n6">
+          <style lineWidth="2">
+            <lineColor r="0" g="0" b="0" />
+            <font name="Sans" size="9">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+      </view>
+    </diagrams>
+  </views>
+</model>
