@@ -1,0 +1,22 @@
+@startuml
+title Checkout Flow
+
+actor Customer
+participant "Web Shop" as Shop
+participant "Payment Gateway" as PG
+participant "Order Service" as Orders
+database "Order DB" as DB
+
+Customer -> Shop : addToCart(item)
+Customer -> Shop : checkout()
+Shop -> PG : authorize(amount)
+PG --> Shop : authToken
+Shop -> Orders : createOrder(items, authToken)
+Orders -> DB : persist(order)
+DB --> Orders : orderId
+Orders -> PG : capture(authToken, orderId)
+PG --> Orders : confirmation
+Orders --> Shop : orderConfirmation
+Shop --> Customer : showConfirmation(orderId)
+
+@enduml

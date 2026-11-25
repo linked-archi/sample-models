@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model xmlns="http://www.opengroup.org/xsd/archimate/3.0/"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       identifier="id-model-1">
+  <name xml:lang="en">Payment Platform</name>
+
+  <elements>
+    <element identifier="id-ba-merchant" xsi:type="BusinessActor">
+      <name xml:lang="en">Merchant</name>
+      <property propertyDefinitionRef="prop-def-1">
+        <value xml:lang="en">https://leanix.example.com/factsheet/id-ba-merchant</value>
+      </property>
+      <property propertyDefinitionRef="prop-def-2">
+        <value xml:lang="en">Payments</value>
+      </property>
+    </element>
+    <element identifier="id-ba-customer" xsi:type="BusinessActor">
+      <name xml:lang="en">Customer</name>
+    </element>
+    <element identifier="id-bs-payment" xsi:type="BusinessService">
+      <name xml:lang="en">Payment Processing</name>
+      <documentation xml:lang="en">Handles card authorisation, capture, and settlement.</documentation>
+      <property propertyDefinitionRef="prop-def-3">
+        <value xml:lang="en">production</value>
+      </property>
+      <property propertyDefinitionRef="prop-def-4">
+        <value xml:lang="en">450000</value>
+      </property>
+    </element>
+    <element identifier="id-bp-checkout" xsi:type="BusinessProcess">
+      <name xml:lang="en">Checkout Process</name>
+    </element>
+    <element identifier="id-ac-gateway" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Payment Gateway</name>
+      <property propertyDefinitionRef="prop-def-3">
+        <value xml:lang="en">production</value>
+      </property>
+      <property propertyDefinitionRef="prop-def-5">
+        <value xml:lang="en">Kotlin/Spring Boot</value>
+      </property>
+      <property propertyDefinitionRef="prop-def-1">
+        <value xml:lang="en">https://leanix.example.com/factsheet/id-ac-gateway</value>
+      </property>
+    </element>
+    <element identifier="id-ac-ledger" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Ledger Service</name>
+      <property propertyDefinitionRef="prop-def-3">
+        <value xml:lang="en">production</value>
+      </property>
+    </element>
+    <element identifier="id-ac-fraud" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Fraud Detection Engine</name>
+      <property propertyDefinitionRef="prop-def-3">
+        <value xml:lang="en">experimental</value>
+      </property>
+      <property propertyDefinitionRef="prop-def-5">
+        <value xml:lang="en">Python/scikit-learn</value>
+      </property>
+    </element>
+    <element identifier="id-ts-k8s" xsi:type="SystemSoftware">
+      <name xml:lang="en">Kubernetes Cluster</name>
+      <property propertyDefinitionRef="prop-def-6">
+        <value xml:lang="en">eu-west-1</value>
+      </property>
+    </element>
+    <element identifier="id-tn-aws" xsi:type="Node">
+      <name xml:lang="en">AWS eu-west-1</name>
+      <property propertyDefinitionRef="prop-def-6">
+        <value xml:lang="en">eu-west-1</value>
+      </property>
+    </element>
+    <element identifier="id-af-gateway" xsi:type="Artifact">
+      <name xml:lang="en">payment-gateway.jar</name>
+    </element>
+    <element identifier="id-af-ledger" xsi:type="Artifact">
+      <name xml:lang="en">ledger-service.jar</name>
+    </element>
+  </elements>
+
+  <relationships>
+    <relationship identifier="id-rel-1" xsi:type="ServingRelationship"
+                  source="id-ac-gateway" target="id-bs-payment"/>
+    <relationship identifier="id-rel-2" xsi:type="CompositionRelationship"
+                  source="id-ac-gateway" target="id-ac-fraud"/>
+    <relationship identifier="id-rel-3" xsi:type="TriggeringRelationship"
+                  source="id-bp-checkout" target="id-bs-payment"/>
+    <relationship identifier="id-rel-4" xsi:type="RealizationRelationship"
+                  source="id-ac-gateway" target="id-bs-payment"/>
+    <!-- Deployment is modelled the way ArchiMate prescribes: the system software is
+         assigned the deployable artifact, and the artifact realizes the application
+         component. Assigning a node directly to an application component is not a
+         permitted relationship. -->
+    <relationship identifier="id-rel-5" xsi:type="AssignmentRelationship"
+                  source="id-ts-k8s" target="id-af-gateway"/>
+    <relationship identifier="id-rel-6" xsi:type="AssignmentRelationship"
+                  source="id-ts-k8s" target="id-af-ledger"/>
+    <relationship identifier="id-rel-9" xsi:type="RealizationRelationship"
+                  source="id-af-gateway" target="id-ac-gateway"/>
+    <relationship identifier="id-rel-10" xsi:type="RealizationRelationship"
+                  source="id-af-ledger" target="id-ac-ledger"/>
+    <relationship identifier="id-rel-7" xsi:type="ServingRelationship"
+                  source="id-bs-payment" target="id-ba-merchant"/>
+    <relationship identifier="id-rel-8" xsi:type="FlowRelationship"
+                  source="id-ba-customer" target="id-bp-checkout"/>
+  </relationships>
+
+  <organizations>
+    <item>
+      <label xml:lang="en">Business</label>
+      <item identifierRef="id-ba-merchant"/>
+      <item identifierRef="id-ba-customer"/>
+      <item identifierRef="id-bs-payment"/>
+      <item identifierRef="id-bp-checkout"/>
+    </item>
+    <item>
+      <label xml:lang="en">Application</label>
+      <item identifierRef="id-ac-gateway"/>
+      <item identifierRef="id-ac-ledger"/>
+      <item identifierRef="id-ac-fraud"/>
+    </item>
+    <item>
+      <label xml:lang="en">Technology</label>
+      <item identifierRef="id-ts-k8s"/>
+      <item identifierRef="id-tn-aws"/>
+      <item identifierRef="id-af-gateway"/>
+      <item identifierRef="id-af-ledger"/>
+    </item>
+  </organizations>
+
+  <propertyDefinitions>
+    <propertyDefinition identifier="prop-def-1">
+      <name xml:lang="en">leanixUrl</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="prop-def-2">
+      <name xml:lang="en">costCenter</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="prop-def-3">
+      <name xml:lang="en">lifecycle</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="prop-def-4">
+      <name xml:lang="en">annualCostEur</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="prop-def-5">
+      <name xml:lang="en">technology</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="prop-def-6">
+      <name xml:lang="en">region</name>
+    </propertyDefinition>
+  </propertyDefinitions>
+</model>

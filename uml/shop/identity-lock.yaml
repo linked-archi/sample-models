@@ -1,0 +1,15 @@
+# Identities published by the converters. Generated — commit this file.
+# A change to an id here is a change to published IRIs; see ADR 0003.
+identities:
+  checkout-sequence.puml:
+    model: shop
+    view: checkout-sequence
+    status: publish
+  inventory-domain.puml:
+    model: shop
+    view: inventory-domain
+    status: publish
+  stock-replenishment.puml:
+    model: shop
+    view: stock-replenishment
+    status: publish

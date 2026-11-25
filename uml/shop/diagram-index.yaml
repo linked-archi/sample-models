@@ -1,0 +1,40 @@
+# PlantUML diagram index
+#
+# A diagram is an arch:View inside an arch:Model. This index names one model, `shop`, and lists
+# the three diagrams that are views of it.
+#
+# All three convert into https://example.org/la/plantuml/shop, so they share one element
+# namespace. Warehouse, StockItem and Supplier are drawn in both inventory-domain and
+# stock-replenishment, and become ONE element each with an archvis:ArchNode in each view —
+# which is the point of grouping. run-plantuml-views.sh shows it in one run.
+model:
+  id: shop
+  title: "Shop"
+  author: "Logistics Team"
+  version: "2.1"
+
+views:
+  - id: inventory-domain
+    file: inventory-domain.puml
+    status: publish
+    title: "Inventory Domain Model"
+    created: "2024-01-10"
+    modified: "2025-09-05"
+    description: "Domain model for warehouse inventory management."
+
+  - id: stock-replenishment
+    file: stock-replenishment.puml
+    status: publish
+    title: "Stock Replenishment"
+    created: "2025-03-22"
+    modified: "2025-09-05"
+    description: "How low stock raises a purchase order with a supplier."
+
+  - id: checkout-sequence
+    file: checkout-sequence.puml
+    status: publish
+    title: "Checkout Flow"
+    author: "Commerce Team"
+    created: "2024-06-01"
+    modified: "2025-10-15"
+    description: "Sequence diagram showing the checkout payment flow."

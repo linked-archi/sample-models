@@ -1,0 +1,349 @@
+@prefix arch: <https://meta.linked.archi/core#> .
+@prefix am: <https://meta.linked.archi/archimate3/onto#> .
+@prefix amvp: <https://meta.linked.archi/archimate3/viewpoints#> .
+@prefix arch-vis: <https://meta.linked.archi/core-vis#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://example.org/la/model/payment-platform/graph/model> {<https://example.org/la/model/payment-platform/model> a arch:Model;
+vann:preferredNamespaceUri "https://example.org/la/model/payment-platform/";
+vann:preferredNamespacePrefix "m";
+arch:modelConformsToMetamodel <https://meta.linked.archi/archimate3/metamodel#ArchiMate3.2>;
+skos:prefLabel "Payment Platform"@en;
+skos:notation "payment-platform" .
+<https://example.org/la/model/payment-platform/folder/business> a arch:Folder;
+schema:name "Business";
+skos:notation "business";
+dcterms:isPartOf <https://example.org/la/model/payment-platform/model>;
+schema:itemListElement <https://example.org/la/model/payment-platform/folder/business/item/eae7cb7c089fc241b0fc> .
+<https://example.org/la/model/payment-platform/folder/business/item/eae7cb7c089fc241b0fc> a schema:ListItem;
+schema:position "1"^^xsd:int;
+schema:item <https://example.org/la/model/payment-platform/element/id-ba-merchant> .
+<https://example.org/la/model/payment-platform/folder/business> schema:itemListElement <https://example.org/la/model/payment-platform/folder/business/item/70604ffc6bb084034ad5> .
+<https://example.org/la/model/payment-platform/folder/business/item/70604ffc6bb084034ad5> a schema:ListItem;
+schema:position "2"^^xsd:int;
+schema:item <https://example.org/la/model/payment-platform/element/id-ba-customer> .
+<https://example.org/la/model/payment-platform/folder/business> schema:itemListElement <https://example.org/la/model/payment-platform/folder/business/item/a71b0e9399f9aba54458> .
+<https://example.org/la/model/payment-platform/folder/business/item/a71b0e9399f9aba54458> a schema:ListItem;
+schema:position "3"^^xsd:int;
+schema:item <https://example.org/la/model/payment-platform/element/id-bs-payment> .
+<https://example.org/la/model/payment-platform/folder/business> schema:itemListElement <https://example.org/la/model/payment-platform/folder/business/item/36d1feb07b4dc08d82a9> .
+<https://example.org/la/model/payment-platform/folder/business/item/36d1feb07b4dc08d82a9> a schema:ListItem;
+schema:position "4"^^xsd:int;
+schema:item <https://example.org/la/model/payment-platform/element/id-bp-checkout> .
+<https://example.org/la/model/payment-platform/folder/application> a arch:Folder;
+schema:name "Application";
+skos:notation "application";
+dcterms:isPartOf <https://example.org/la/model/payment-platform/model>;
+schema:itemListElement <https://example.org/la/model/payment-platform/folder/application/item/89be14847404886c2188> .
+<https://example.org/la/model/payment-platform/folder/application/item/89be14847404886c2188> a schema:ListItem;
+schema:position "1"^^xsd:int;
+schema:item <https://example.org/la/model/payment-platform/element/id-ac-gateway> .
+<https://example.org/la/model/payment-platform/folder/application> schema:itemListElement <https://example.org/la/model/payment-platform/folder/application/item/8a7ffedf442ad5b92ae8> .
+<https://example.org/la/model/payment-platform/folder/application/item/8a7ffedf442ad5b92ae8> a schema:ListItem;
+schema:position "2"^^xsd:int;
+schema:item <https://example.org/la/model/payment-platform/element/id-ac-ledger> .
+<https://example.org/la/model/payment-platform/folder/application> schema:itemListElement <https://example.org/la/model/payment-platform/folder/application/item/bffeb97f2daebac74c87> .
+<https://example.org/la/model/payment-platform/folder/application/item/bffeb97f2daebac74c87> a schema:ListItem;
+schema:position "3"^^xsd:int;
+schema:item <https://example.org/la/model/payment-platform/element/id-ac-fraud> .
+<https://example.org/la/model/payment-platform/folder/technology> a arch:Folder;
+schema:name "Technology";
+skos:notation "technology";
+dcterms:isPartOf <https://example.org/la/model/payment-platform/model>;
+schema:itemListElement <https://example.org/la/model/payment-platform/folder/technology/item/aa28c3db204e4f5e0a42> .
+<https://example.org/la/model/payment-platform/folder/technology/item/aa28c3db204e4f5e0a42> a schema:ListItem;
+schema:position "1"^^xsd:int;
+schema:item <https://example.org/la/model/payment-platform/element/id-ts-k8s> .
+<https://example.org/la/model/payment-platform/folder/technology> schema:itemListElement <https://example.org/la/model/payment-platform/folder/technology/item/7a2c9f7470c1fdca7959> .
+<https://example.org/la/model/payment-platform/folder/technology/item/7a2c9f7470c1fdca7959> a schema:ListItem;
+schema:position "2"^^xsd:int;
+schema:item <https://example.org/la/model/payment-platform/element/id-tn-aws> .
+<https://example.org/la/model/payment-platform/folder/technology> schema:itemListElement <https://example.org/la/model/payment-platform/folder/technology/item/d062bd9777d6639208e7> .
+<https://example.org/la/model/payment-platform/folder/technology/item/d062bd9777d6639208e7> a schema:ListItem;
+schema:position "3"^^xsd:int;
+schema:item <https://example.org/la/model/payment-platform/element/id-af-gateway> .
+<https://example.org/la/model/payment-platform/folder/technology> schema:itemListElement <https://example.org/la/model/payment-platform/folder/technology/item/0780fd9b2f8eaf79c378> .
+<https://example.org/la/model/payment-platform/folder/technology/item/0780fd9b2f8eaf79c378> a schema:ListItem;
+schema:position "4"^^xsd:int;
+schema:item <https://example.org/la/model/payment-platform/element/id-af-ledger> .
+<https://example.org/la/model/payment-platform/element/id-ba-merchant> dcterms:isPartOf <https://example.org/la/model/payment-platform/folder/business> .
+<https://example.org/la/model/payment-platform/element/id-ba-customer> dcterms:isPartOf <https://example.org/la/model/payment-platform/folder/business> .
+<https://example.org/la/model/payment-platform/element/id-bs-payment> dcterms:isPartOf <https://example.org/la/model/payment-platform/folder/business> .
+<https://example.org/la/model/payment-platform/element/id-bp-checkout> dcterms:isPartOf <https://example.org/la/model/payment-platform/folder/business> .
+<https://example.org/la/model/payment-platform/element/id-ac-gateway> dcterms:isPartOf <https://example.org/la/model/payment-platform/folder/application> .
+<https://example.org/la/model/payment-platform/element/id-ac-ledger> dcterms:isPartOf <https://example.org/la/model/payment-platform/folder/application> .
+<https://example.org/la/model/payment-platform/element/id-ac-fraud> dcterms:isPartOf <https://example.org/la/model/payment-platform/folder/application> .
+<https://example.org/la/model/payment-platform/element/id-ts-k8s> dcterms:isPartOf <https://example.org/la/model/payment-platform/folder/technology> .
+<https://example.org/la/model/payment-platform/element/id-tn-aws> dcterms:isPartOf <https://example.org/la/model/payment-platform/folder/technology> .
+<https://example.org/la/model/payment-platform/element/id-af-gateway> dcterms:isPartOf <https://example.org/la/model/payment-platform/folder/technology> .
+<https://example.org/la/model/payment-platform/element/id-af-ledger> dcterms:isPartOf <https://example.org/la/model/payment-platform/folder/technology> .
+}
+
+<https://example.org/la/model/payment-platform/graph/provenance> {<https://example.org/la/model/payment-platform/model> dcterms:replaces <https://example.org/la/model/payment-platform> .
+<https://example.org/la/model/payment-platform> owl:sameAs <https://example.org/la/model/payment-platform/model>;
+dcterms:isReplacedBy <https://example.org/la/model/payment-platform/model> .
+<https://example.org/la/provenance/run/29f66485> a prov:Activity;
+prov:startedAtTime "2026-11-25T13:18:59.196321+01:00"^^xsd:dateTime;
+prov:endedAtTime "2026-11-25T13:18:59.225641+01:00"^^xsd:dateTime;
+prov:wasAssociatedWith <https://example.org/la/provenance/agent/fffb195e> .
+<https://example.org/la/model/payment-platform/model> prov:generatedAtTime "2026-11-25T13:18:59.225641+01:00"^^xsd:dateTime .
+<https://example.org/la/provenance/agent/fffb195e> a prov:SoftwareAgent,schema:SoftwareApplication;
+schema:name "archimate2linkedarchi";
+schema:softwareVersion "1.3.0-SNAPSHOT" .
+<https://example.org/la/provenance/source/payment-platform-xml> a prov:Entity;
+schema:name "payment-platform.xml" .
+<https://example.org/la/provenance/run/29f66485> prov:used <https://example.org/la/provenance/source/payment-platform-xml> .
+<https://example.org/la/model/payment-platform/model> prov:wasGeneratedBy <https://example.org/la/provenance/run/29f66485>;
+prov:wasDerivedFrom <https://example.org/la/provenance/source/payment-platform-xml> .
+<https://example.org/la/model/payment-platform/graph/semantic> a prov:Bundle;
+prov:wasGeneratedBy <https://example.org/la/provenance/run/29f66485>;
+prov:generatedAtTime "2026-11-25T13:18:59.225641+01:00"^^xsd:dateTime;
+prov:wasDerivedFrom <https://example.org/la/provenance/source/payment-platform-xml> .
+<https://example.org/la/model/payment-platform/graph/views> a prov:Bundle;
+prov:wasGeneratedBy <https://example.org/la/provenance/run/29f66485>;
+prov:generatedAtTime "2026-11-25T13:18:59.225641+01:00"^^xsd:dateTime;
+prov:wasDerivedFrom <https://example.org/la/provenance/source/payment-platform-xml> .
+<https://example.org/la/model/payment-platform/graph/model> a prov:Bundle;
+prov:wasGeneratedBy <https://example.org/la/provenance/run/29f66485>;
+prov:generatedAtTime "2026-11-25T13:18:59.225641+01:00"^^xsd:dateTime .
+}
+
+<https://example.org/la/model/payment-platform/graph/semantic> {<https://example.org/la/model/payment-platform/element/id-ba-merchant> a arch:Element,arch:ModelConcept;
+arch:inModel <https://example.org/la/model/payment-platform/model>;
+a am:BusinessActor;
+skos:notation "id-ba-merchant";
+skos:prefLabel "Merchant"@en;
+schema:additionalProperty <https://example.org/la/model/payment-platform/element/id-ba-merchant/property/668bb284d477cc80c084> .
+<https://example.org/la/model/payment-platform/element/id-ba-merchant/property/668bb284d477cc80c084> a schema:PropertyValue;
+schema:propertyID "prop-def-1";
+schema:name "leanixUrl";
+schema:value "https://leanix.example.com/factsheet/id-ba-merchant" .
+<https://example.org/la/model/payment-platform/element/id-ba-merchant> schema:additionalProperty <https://example.org/la/model/payment-platform/element/id-ba-merchant/property/de7722206a77e250c70d> .
+<https://example.org/la/model/payment-platform/element/id-ba-merchant/property/de7722206a77e250c70d> a schema:PropertyValue;
+schema:propertyID "prop-def-2";
+schema:name "costCenter";
+schema:value "Payments" .
+<https://example.org/la/model/payment-platform/element/id-ba-merchant> dcterms:isPartOf <https://example.org/la/model/payment-platform/model> .
+<https://example.org/la/model/payment-platform/element/id-ba-customer> a arch:Element,arch:ModelConcept;
+arch:inModel <https://example.org/la/model/payment-platform/model>;
+a am:BusinessActor;
+skos:notation "id-ba-customer";
+skos:prefLabel "Customer"@en;
+dcterms:isPartOf <https://example.org/la/model/payment-platform/model> .
+<https://example.org/la/model/payment-platform/element/id-bs-payment> a arch:Element,arch:ModelConcept;
+arch:inModel <https://example.org/la/model/payment-platform/model>;
+a am:BusinessService;
+skos:notation "id-bs-payment";
+skos:prefLabel "Payment Processing"@en;
+skos:definition "Handles card authorisation, capture, and settlement."@en;
+schema:additionalProperty <https://example.org/la/model/payment-platform/element/id-bs-payment/property/78ded0077592659befcc> .
+<https://example.org/la/model/payment-platform/element/id-bs-payment/property/78ded0077592659befcc> a schema:PropertyValue;
+schema:propertyID "prop-def-3";
+schema:name "lifecycle";
+schema:value "production" .
+<https://example.org/la/model/payment-platform/element/id-bs-payment> schema:additionalProperty <https://example.org/la/model/payment-platform/element/id-bs-payment/property/3c9239e9523e821ec37f> .
+<https://example.org/la/model/payment-platform/element/id-bs-payment/property/3c9239e9523e821ec37f> a schema:PropertyValue;
+schema:propertyID "prop-def-4";
+schema:name "annualCostEur";
+schema:value "450000" .
+<https://example.org/la/model/payment-platform/element/id-bs-payment> dcterms:isPartOf <https://example.org/la/model/payment-platform/model> .
+<https://example.org/la/model/payment-platform/element/id-bp-checkout> a arch:Element,arch:ModelConcept;
+arch:inModel <https://example.org/la/model/payment-platform/model>;
+a am:BusinessProcess;
+skos:notation "id-bp-checkout";
+skos:prefLabel "Checkout Process"@en;
+dcterms:isPartOf <https://example.org/la/model/payment-platform/model> .
+<https://example.org/la/model/payment-platform/element/id-ac-gateway> a arch:Element,arch:ModelConcept;
+arch:inModel <https://example.org/la/model/payment-platform/model>;
+a am:ApplicationComponent;
+skos:notation "id-ac-gateway";
+skos:prefLabel "Payment Gateway"@en;
+schema:additionalProperty <https://example.org/la/model/payment-platform/element/id-ac-gateway/property/1215214944b6b215a647> .
+<https://example.org/la/model/payment-platform/element/id-ac-gateway/property/1215214944b6b215a647> a schema:PropertyValue;
+schema:propertyID "prop-def-3";
+schema:name "lifecycle";
+schema:value "production" .
+<https://example.org/la/model/payment-platform/element/id-ac-gateway> schema:additionalProperty <https://example.org/la/model/payment-platform/element/id-ac-gateway/property/9f80da4d90773f075871> .
+<https://example.org/la/model/payment-platform/element/id-ac-gateway/property/9f80da4d90773f075871> a schema:PropertyValue;
+schema:propertyID "prop-def-5";
+schema:name "technology";
+schema:value "Kotlin/Spring Boot" .
+<https://example.org/la/model/payment-platform/element/id-ac-gateway> schema:additionalProperty <https://example.org/la/model/payment-platform/element/id-ac-gateway/property/9f7c79707e1ed62c5ebf> .
+<https://example.org/la/model/payment-platform/element/id-ac-gateway/property/9f7c79707e1ed62c5ebf> a schema:PropertyValue;
+schema:propertyID "prop-def-1";
+schema:name "leanixUrl";
+schema:value "https://leanix.example.com/factsheet/id-ac-gateway" .
+<https://example.org/la/model/payment-platform/element/id-ac-gateway> dcterms:isPartOf <https://example.org/la/model/payment-platform/model> .
+<https://example.org/la/model/payment-platform/element/id-ac-ledger> a arch:Element,arch:ModelConcept;
+arch:inModel <https://example.org/la/model/payment-platform/model>;
+a am:ApplicationComponent;
+skos:notation "id-ac-ledger";
+skos:prefLabel "Ledger Service"@en;
+schema:additionalProperty <https://example.org/la/model/payment-platform/element/id-ac-ledger/property/25f7a8995c22da4f2aef> .
+<https://example.org/la/model/payment-platform/element/id-ac-ledger/property/25f7a8995c22da4f2aef> a schema:PropertyValue;
+schema:propertyID "prop-def-3";
+schema:name "lifecycle";
+schema:value "production" .
+<https://example.org/la/model/payment-platform/element/id-ac-ledger> dcterms:isPartOf <https://example.org/la/model/payment-platform/model> .
+<https://example.org/la/model/payment-platform/element/id-ac-fraud> a arch:Element,arch:ModelConcept;
+arch:inModel <https://example.org/la/model/payment-platform/model>;
+a am:ApplicationComponent;
+skos:notation "id-ac-fraud";
+skos:prefLabel "Fraud Detection Engine"@en;
+schema:additionalProperty <https://example.org/la/model/payment-platform/element/id-ac-fraud/property/c3a99d20837b439d9c03> .
+<https://example.org/la/model/payment-platform/element/id-ac-fraud/property/c3a99d20837b439d9c03> a schema:PropertyValue;
+schema:propertyID "prop-def-3";
+schema:name "lifecycle";
+schema:value "experimental" .
+<https://example.org/la/model/payment-platform/element/id-ac-fraud> schema:additionalProperty <https://example.org/la/model/payment-platform/element/id-ac-fraud/property/6d3c010f38f56e976473> .
+<https://example.org/la/model/payment-platform/element/id-ac-fraud/property/6d3c010f38f56e976473> a schema:PropertyValue;
+schema:propertyID "prop-def-5";
+schema:name "technology";
+schema:value "Python/scikit-learn" .
+<https://example.org/la/model/payment-platform/element/id-ac-fraud> dcterms:isPartOf <https://example.org/la/model/payment-platform/model> .
+<https://example.org/la/model/payment-platform/element/id-ts-k8s> a arch:Element,arch:ModelConcept;
+arch:inModel <https://example.org/la/model/payment-platform/model>;
+a am:SystemSoftware;
+skos:notation "id-ts-k8s";
+skos:prefLabel "Kubernetes Cluster"@en;
+schema:additionalProperty <https://example.org/la/model/payment-platform/element/id-ts-k8s/property/193ea1f759783135d9cf> .
+<https://example.org/la/model/payment-platform/element/id-ts-k8s/property/193ea1f759783135d9cf> a schema:PropertyValue;
+schema:propertyID "prop-def-6";
+schema:name "region";
+schema:value "eu-west-1" .
+<https://example.org/la/model/payment-platform/element/id-ts-k8s> dcterms:isPartOf <https://example.org/la/model/payment-platform/model> .
+<https://example.org/la/model/payment-platform/element/id-tn-aws> a arch:Element,arch:ModelConcept;
+arch:inModel <https://example.org/la/model/payment-platform/model>;
+a am:Node;
+skos:notation "id-tn-aws";
+skos:prefLabel "AWS eu-west-1"@en;
+schema:additionalProperty <https://example.org/la/model/payment-platform/element/id-tn-aws/property/ba9ab0812dd4acd81904> .
+<https://example.org/la/model/payment-platform/element/id-tn-aws/property/ba9ab0812dd4acd81904> a schema:PropertyValue;
+schema:propertyID "prop-def-6";
+schema:name "region";
+schema:value "eu-west-1" .
+<https://example.org/la/model/payment-platform/element/id-tn-aws> dcterms:isPartOf <https://example.org/la/model/payment-platform/model> .
+<https://example.org/la/model/payment-platform/element/id-af-gateway> a arch:Element,arch:ModelConcept;
+arch:inModel <https://example.org/la/model/payment-platform/model>;
+a am:Artifact;
+skos:notation "id-af-gateway";
+skos:prefLabel "payment-gateway.jar"@en;
+dcterms:isPartOf <https://example.org/la/model/payment-platform/model> .
+<https://example.org/la/model/payment-platform/element/id-af-ledger> a arch:Element,arch:ModelConcept;
+arch:inModel <https://example.org/la/model/payment-platform/model>;
+a am:Artifact;
+skos:notation "id-af-ledger";
+skos:prefLabel "ledger-service.jar"@en;
+dcterms:isPartOf <https://example.org/la/model/payment-platform/model> .
+<https://example.org/la/model/payment-platform/relationship/id-rel-1> a arch:QualifiedRelationship,arch:ModelConcept;
+arch:inModel <https://example.org/la/model/payment-platform/model>;
+a am:Serving;
+skos:notation "id-rel-1";
+arch:source <https://example.org/la/model/payment-platform/element/id-ac-gateway>;
+arch:target <https://example.org/la/model/payment-platform/element/id-bs-payment>;
+dcterms:isPartOf <https://example.org/la/model/payment-platform/model> .
+<https://example.org/la/model/payment-platform/element/id-ac-gateway> am:serves <https://example.org/la/model/payment-platform/element/id-bs-payment> .
+}
+@version "1.2" .
+
+<https://example.org/la/model/payment-platform/graph/semantic> {<https://example.org/la/model/payment-platform/relationship/id-rel-1> rdf:reifies <<( <https://example.org/la/model/payment-platform/element/id-ac-gateway> am:serves <https://example.org/la/model/payment-platform/element/id-bs-payment> )>> .
+<https://example.org/la/model/payment-platform/element/id-ac-gateway> am:qualifiedServing <https://example.org/la/model/payment-platform/relationship/id-rel-1> .
+<https://example.org/la/model/payment-platform/relationship/id-rel-2> a arch:QualifiedRelationship,arch:ModelConcept;
+arch:inModel <https://example.org/la/model/payment-platform/model>;
+a am:Composition;
+skos:notation "id-rel-2";
+arch:source <https://example.org/la/model/payment-platform/element/id-ac-gateway>;
+arch:target <https://example.org/la/model/payment-platform/element/id-ac-fraud>;
+dcterms:isPartOf <https://example.org/la/model/payment-platform/model> .
+<https://example.org/la/model/payment-platform/element/id-ac-gateway> am:composedOf <https://example.org/la/model/payment-platform/element/id-ac-fraud> .
+<https://example.org/la/model/payment-platform/relationship/id-rel-2> rdf:reifies <<( <https://example.org/la/model/payment-platform/element/id-ac-gateway> am:composedOf <https://example.org/la/model/payment-platform/element/id-ac-fraud> )>> .
+<https://example.org/la/model/payment-platform/element/id-ac-gateway> am:qualifiedComposition <https://example.org/la/model/payment-platform/relationship/id-rel-2> .
+<https://example.org/la/model/payment-platform/relationship/id-rel-3> a arch:QualifiedRelationship,arch:ModelConcept;
+arch:inModel <https://example.org/la/model/payment-platform/model>;
+a am:Triggering;
+skos:notation "id-rel-3";
+arch:source <https://example.org/la/model/payment-platform/element/id-bp-checkout>;
+arch:target <https://example.org/la/model/payment-platform/element/id-bs-payment>;
+dcterms:isPartOf <https://example.org/la/model/payment-platform/model> .
+<https://example.org/la/model/payment-platform/element/id-bp-checkout> am:triggers <https://example.org/la/model/payment-platform/element/id-bs-payment> .
+<https://example.org/la/model/payment-platform/relationship/id-rel-3> rdf:reifies <<( <https://example.org/la/model/payment-platform/element/id-bp-checkout> am:triggers <https://example.org/la/model/payment-platform/element/id-bs-payment> )>> .
+<https://example.org/la/model/payment-platform/element/id-bp-checkout> am:qualifiedTriggering <https://example.org/la/model/payment-platform/relationship/id-rel-3> .
+<https://example.org/la/model/payment-platform/relationship/id-rel-4> a arch:QualifiedRelationship,arch:ModelConcept;
+arch:inModel <https://example.org/la/model/payment-platform/model>;
+a am:Realization;
+skos:notation "id-rel-4";
+arch:source <https://example.org/la/model/payment-platform/element/id-ac-gateway>;
+arch:target <https://example.org/la/model/payment-platform/element/id-bs-payment>;
+dcterms:isPartOf <https://example.org/la/model/payment-platform/model> .
+<https://example.org/la/model/payment-platform/element/id-ac-gateway> am:realizes <https://example.org/la/model/payment-platform/element/id-bs-payment> .
+<https://example.org/la/model/payment-platform/relationship/id-rel-4> rdf:reifies <<( <https://example.org/la/model/payment-platform/element/id-ac-gateway> am:realizes <https://example.org/la/model/payment-platform/element/id-bs-payment> )>> .
+<https://example.org/la/model/payment-platform/element/id-ac-gateway> am:qualifiedRealization <https://example.org/la/model/payment-platform/relationship/id-rel-4> .
+<https://example.org/la/model/payment-platform/relationship/id-rel-5> a arch:QualifiedRelationship,arch:ModelConcept;
+arch:inModel <https://example.org/la/model/payment-platform/model>;
+a am:Assignment;
+skos:notation "id-rel-5";
+arch:source <https://example.org/la/model/payment-platform/element/id-ts-k8s>;
+arch:target <https://example.org/la/model/payment-platform/element/id-af-gateway>;
+dcterms:isPartOf <https://example.org/la/model/payment-platform/model> .
+<https://example.org/la/model/payment-platform/element/id-ts-k8s> am:assignedTo <https://example.org/la/model/payment-platform/element/id-af-gateway> .
+<https://example.org/la/model/payment-platform/relationship/id-rel-5> rdf:reifies <<( <https://example.org/la/model/payment-platform/element/id-ts-k8s> am:assignedTo <https://example.org/la/model/payment-platform/element/id-af-gateway> )>> .
+<https://example.org/la/model/payment-platform/element/id-ts-k8s> am:qualifiedAssignment <https://example.org/la/model/payment-platform/relationship/id-rel-5> .
+<https://example.org/la/model/payment-platform/relationship/id-rel-6> a arch:QualifiedRelationship,arch:ModelConcept;
+arch:inModel <https://example.org/la/model/payment-platform/model>;
+a am:Assignment;
+skos:notation "id-rel-6";
+arch:source <https://example.org/la/model/payment-platform/element/id-ts-k8s>;
+arch:target <https://example.org/la/model/payment-platform/element/id-af-ledger>;
+dcterms:isPartOf <https://example.org/la/model/payment-platform/model> .
+<https://example.org/la/model/payment-platform/element/id-ts-k8s> am:assignedTo <https://example.org/la/model/payment-platform/element/id-af-ledger> .
+<https://example.org/la/model/payment-platform/relationship/id-rel-6> rdf:reifies <<( <https://example.org/la/model/payment-platform/element/id-ts-k8s> am:assignedTo <https://example.org/la/model/payment-platform/element/id-af-ledger> )>> .
+<https://example.org/la/model/payment-platform/element/id-ts-k8s> am:qualifiedAssignment <https://example.org/la/model/payment-platform/relationship/id-rel-6> .
+<https://example.org/la/model/payment-platform/relationship/id-rel-9> a arch:QualifiedRelationship,arch:ModelConcept;
+arch:inModel <https://example.org/la/model/payment-platform/model>;
+a am:Realization;
+skos:notation "id-rel-9";
+arch:source <https://example.org/la/model/payment-platform/element/id-af-gateway>;
+arch:target <https://example.org/la/model/payment-platform/element/id-ac-gateway>;
+dcterms:isPartOf <https://example.org/la/model/payment-platform/model> .
+<https://example.org/la/model/payment-platform/element/id-af-gateway> am:realizes <https://example.org/la/model/payment-platform/element/id-ac-gateway> .
+<https://example.org/la/model/payment-platform/relationship/id-rel-9> rdf:reifies <<( <https://example.org/la/model/payment-platform/element/id-af-gateway> am:realizes <https://example.org/la/model/payment-platform/element/id-ac-gateway> )>> .
+<https://example.org/la/model/payment-platform/element/id-af-gateway> am:qualifiedRealization <https://example.org/la/model/payment-platform/relationship/id-rel-9> .
+<https://example.org/la/model/payment-platform/relationship/id-rel-10> a arch:QualifiedRelationship,arch:ModelConcept;
+arch:inModel <https://example.org/la/model/payment-platform/model>;
+a am:Realization;
+skos:notation "id-rel-10";
+arch:source <https://example.org/la/model/payment-platform/element/id-af-ledger>;
+arch:target <https://example.org/la/model/payment-platform/element/id-ac-ledger>;
+dcterms:isPartOf <https://example.org/la/model/payment-platform/model> .
+<https://example.org/la/model/payment-platform/element/id-af-ledger> am:realizes <https://example.org/la/model/payment-platform/element/id-ac-ledger> .
+<https://example.org/la/model/payment-platform/relationship/id-rel-10> rdf:reifies <<( <https://example.org/la/model/payment-platform/element/id-af-ledger> am:realizes <https://example.org/la/model/payment-platform/element/id-ac-ledger> )>> .
+<https://example.org/la/model/payment-platform/element/id-af-ledger> am:qualifiedRealization <https://example.org/la/model/payment-platform/relationship/id-rel-10> .
+<https://example.org/la/model/payment-platform/relationship/id-rel-7> a arch:QualifiedRelationship,arch:ModelConcept;
+arch:inModel <https://example.org/la/model/payment-platform/model>;
+a am:Serving;
+skos:notation "id-rel-7";
+arch:source <https://example.org/la/model/payment-platform/element/id-bs-payment>;
+arch:target <https://example.org/la/model/payment-platform/element/id-ba-merchant>;
+dcterms:isPartOf <https://example.org/la/model/payment-platform/model> .
+<https://example.org/la/model/payment-platform/element/id-bs-payment> am:serves <https://example.org/la/model/payment-platform/element/id-ba-merchant> .
+<https://example.org/la/model/payment-platform/relationship/id-rel-7> rdf:reifies <<( <https://example.org/la/model/payment-platform/element/id-bs-payment> am:serves <https://example.org/la/model/payment-platform/element/id-ba-merchant> )>> .
+<https://example.org/la/model/payment-platform/element/id-bs-payment> am:qualifiedServing <https://example.org/la/model/payment-platform/relationship/id-rel-7> .
+<https://example.org/la/model/payment-platform/relationship/id-rel-8> a arch:QualifiedRelationship,arch:ModelConcept;
+arch:inModel <https://example.org/la/model/payment-platform/model>;
+a am:Flow;
+skos:notation "id-rel-8";
+arch:source <https://example.org/la/model/payment-platform/element/id-ba-customer>;
+arch:target <https://example.org/la/model/payment-platform/element/id-bp-checkout>;
+dcterms:isPartOf <https://example.org/la/model/payment-platform/model> .
+<https://example.org/la/model/payment-platform/element/id-ba-customer> am:flowsTo <https://example.org/la/model/payment-platform/element/id-bp-checkout> .
+<https://example.org/la/model/payment-platform/relationship/id-rel-8> rdf:reifies <<( <https://example.org/la/model/payment-platform/element/id-ba-customer> am:flowsTo <https://example.org/la/model/payment-platform/element/id-bp-checkout> )>> .
+<https://example.org/la/model/payment-platform/element/id-ba-customer> am:qualifiedFlow <https://example.org/la/model/payment-platform/relationship/id-rel-8> .
+}

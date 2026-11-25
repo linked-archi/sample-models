@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Second view of the Order Domain model.
+
+  A separate process from order fulfilment, in the same model: grouping the two under one
+  `model:` in diagram-index.yaml gives them one IRI namespace and one set of named graphs.
+  Element ids are prefixed (`Ret_`) so they cannot collide with the fulfilment process — the
+  converter refuses a run where two views claim one element id with different identities.
+-->
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             id="Definitions_Returns"
+             targetNamespace="https://example.org/bpmn/">
+
+  <process id="ReturnsHandling" name="Returns Handling" isExecutable="false">
+    <documentation>Customer return from request to refund.</documentation>
+
+    <startEvent id="Ret_Start" name="Return requested"/>
+    <userTask id="Ret_Task_Inspect" name="Inspect returned goods"/>
+    <exclusiveGateway id="Ret_GW_Resellable" name="Resellable?"/>
+    <serviceTask id="Ret_Task_Restock" name="Return to stock"/>
+    <serviceTask id="Ret_Task_Scrap" name="Scrap item"/>
+    <serviceTask id="Ret_Task_Refund" name="Issue refund"/>
+    <endEvent id="Ret_End" name="Return closed"/>
+
+    <sequenceFlow id="Ret_Flow_1" sourceRef="Ret_Start" targetRef="Ret_Task_Inspect"/>
+    <sequenceFlow id="Ret_Flow_2" sourceRef="Ret_Task_Inspect" targetRef="Ret_GW_Resellable"/>
+    <sequenceFlow id="Ret_Flow_3" name="Yes" sourceRef="Ret_GW_Resellable" targetRef="Ret_Task_Restock"/>
+    <sequenceFlow id="Ret_Flow_4" name="No" sourceRef="Ret_GW_Resellable" targetRef="Ret_Task_Scrap"/>
+    <sequenceFlow id="Ret_Flow_5" sourceRef="Ret_Task_Restock" targetRef="Ret_Task_Refund"/>
+    <sequenceFlow id="Ret_Flow_6" sourceRef="Ret_Task_Scrap" targetRef="Ret_Task_Refund"/>
+    <sequenceFlow id="Ret_Flow_7" sourceRef="Ret_Task_Refund" targetRef="Ret_End"/>
+  </process>
+
+  <bpmndi:BPMNDiagram id="BPMNDiagram_Returns">
+    <bpmndi:BPMNPlane id="BPMNPlane_Returns" bpmnElement="ReturnsHandling">
+      <bpmndi:BPMNShape id="Ret_Shape_Start" bpmnElement="Ret_Start">
+        <dc:Bounds x="100" y="180" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Ret_Shape_Inspect" bpmnElement="Ret_Task_Inspect">
+        <dc:Bounds x="180" y="158" width="110" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Ret_Shape_GW" bpmnElement="Ret_GW_Resellable" isMarkerVisible="true">
+        <dc:Bounds x="330" y="173" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Ret_Shape_Restock" bpmnElement="Ret_Task_Restock">
+        <dc:Bounds x="430" y="90" width="110" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Ret_Shape_Scrap" bpmnElement="Ret_Task_Scrap">
+        <dc:Bounds x="430" y="230" width="110" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Ret_Shape_Refund" bpmnElement="Ret_Task_Refund">
+        <dc:Bounds x="590" y="158" width="110" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Ret_Shape_End" bpmnElement="Ret_End">
+        <dc:Bounds x="750" y="180" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Ret_Edge_Flow1" bpmnElement="Ret_Flow_1">
+        <di:waypoint x="136" y="198"/>
+        <di:waypoint x="180" y="198"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Ret_Edge_Flow2" bpmnElement="Ret_Flow_2">
+        <di:waypoint x="290" y="198"/>
+        <di:waypoint x="330" y="198"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>

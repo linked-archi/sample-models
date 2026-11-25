@@ -1,0 +1,40 @@
+@startuml
+title Inventory Domain Model
+
+package "Inventory" {
+  class Warehouse {
+    +id: String
+    +name: String
+    +location: Address
+  }
+
+  class StockItem {
+    +sku: String
+    +quantity: Int
+    +reorderLevel: Int
+  }
+
+  class Supplier {
+    +id: String
+    +name: String
+    +leadTimeDays: Int
+  }
+
+  interface Trackable {
+    +getTrackingId(): String
+  }
+
+  enum StockStatus {
+    IN_STOCK
+    LOW_STOCK
+    OUT_OF_STOCK
+    DISCONTINUED
+  }
+}
+
+Warehouse "1" *-- "*" StockItem : holds
+StockItem --> StockStatus : status
+Supplier "1" --> "*" StockItem : supplies
+StockItem ..|> Trackable
+
+@enduml

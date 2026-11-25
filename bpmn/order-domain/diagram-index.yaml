@@ -1,0 +1,33 @@
+# BPMN diagram index
+#
+# A diagram is an arch:View inside an arch:Model, and this file says so: the model is named
+# once, and the diagrams it holds are listed as its views.
+#
+# Both processes convert into https://example.org/la/bpmn/order-domain — one IRI namespace and
+# one set of named graphs (semantic / views / provenance) — with a view each. Model metadata
+# (author, version) describes the model and is inherited; a view's title and dates describe
+# that diagram.
+#
+# `render` names each SVG after its view: order-fulfillment.svg, returns-handling.svg.
+model:
+  id: order-domain
+  title: "Order Domain"
+  author: "Commerce Team"
+  version: "1.0"
+
+views:
+  - id: order-fulfillment
+    file: order-fulfillment.bpmn
+    status: publish
+    title: "Order Fulfillment Process"
+    created: "2024-03-15"
+    modified: "2025-11-20"
+    description: "End-to-end order processing from receipt to shipment."
+
+  - id: returns-handling
+    file: returns-handling.bpmn
+    status: publish
+    title: "Returns Handling Process"
+    created: "2025-02-04"
+    modified: "2025-11-20"
+    description: "Customer return from request to refund."

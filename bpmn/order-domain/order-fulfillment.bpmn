@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             id="Definitions_1"
+             targetNamespace="https://example.org/bpmn/">
+
+  <process id="OrderFulfillment" name="Order Fulfillment Process" isExecutable="false">
+    <startEvent id="Start_OrderReceived" name="Order Received"/>
+    <userTask id="Task_ValidateOrder" name="Validate Order"/>
+    <exclusiveGateway id="GW_Valid" name="Order Valid?"/>
+    <serviceTask id="Task_CheckInventory" name="Check Inventory"/>
+    <exclusiveGateway id="GW_InStock" name="In Stock?"/>
+    <serviceTask id="Task_ProcessPayment" name="Process Payment"/>
+    <serviceTask id="Task_ShipOrder" name="Ship Order"/>
+    <serviceTask id="Task_NotifyCustomer" name="Notify Customer"/>
+    <endEvent id="End_Fulfilled" name="Order Fulfilled"/>
+    <userTask id="Task_HandleBackorder" name="Handle Backorder"/>
+    <endEvent id="End_Rejected" name="Order Rejected"/>
+
+    <sequenceFlow id="Flow_1" sourceRef="Start_OrderReceived" targetRef="Task_ValidateOrder"/>
+    <sequenceFlow id="Flow_2" sourceRef="Task_ValidateOrder" targetRef="GW_Valid"/>
+    <sequenceFlow id="Flow_3" name="Yes" sourceRef="GW_Valid" targetRef="Task_CheckInventory"/>
+    <sequenceFlow id="Flow_4" name="No" sourceRef="GW_Valid" targetRef="End_Rejected"/>
+    <sequenceFlow id="Flow_5" sourceRef="Task_CheckInventory" targetRef="GW_InStock"/>
+    <sequenceFlow id="Flow_6" name="Yes" sourceRef="GW_InStock" targetRef="Task_ProcessPayment"/>
+    <sequenceFlow id="Flow_7" name="No" sourceRef="GW_InStock" targetRef="Task_HandleBackorder"/>
+    <sequenceFlow id="Flow_8" sourceRef="Task_ProcessPayment" targetRef="Task_ShipOrder"/>
+    <sequenceFlow id="Flow_9" sourceRef="Task_ShipOrder" targetRef="Task_NotifyCustomer"/>
+    <sequenceFlow id="Flow_10" sourceRef="Task_NotifyCustomer" targetRef="End_Fulfilled"/>
+    <sequenceFlow id="Flow_11" sourceRef="Task_HandleBackorder" targetRef="End_Fulfilled"/>
+  </process>
+
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="OrderFulfillment">
+      <bpmndi:BPMNShape id="Shape_Start" bpmnElement="Start_OrderReceived">
+        <dc:Bounds x="180" y="200" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Validate" bpmnElement="Task_ValidateOrder">
+        <dc:Bounds x="270" y="190" width="100" height="56"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_GW_Valid" bpmnElement="GW_Valid">
+        <dc:Bounds x="420" y="195" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_CheckInv" bpmnElement="Task_CheckInventory">
+        <dc:Bounds x="530" y="190" width="100" height="56"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_GW_InStock" bpmnElement="GW_InStock">
+        <dc:Bounds x="680" y="195" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Payment" bpmnElement="Task_ProcessPayment">
+        <dc:Bounds x="790" y="190" width="100" height="56"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Ship" bpmnElement="Task_ShipOrder">
+        <dc:Bounds x="940" y="190" width="100" height="56"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Notify" bpmnElement="Task_NotifyCustomer">
+        <dc:Bounds x="1090" y="190" width="100" height="56"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_End" bpmnElement="End_Fulfilled">
+        <dc:Bounds x="1240" y="200" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Backorder" bpmnElement="Task_HandleBackorder">
+        <dc:Bounds x="790" y="310" width="100" height="56"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Rejected" bpmnElement="End_Rejected">
+        <dc:Bounds x="420" y="320" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Edge_Flow1" bpmnElement="Flow_1">
+        <di:waypoint x="216" y="218"/>
+        <di:waypoint x="270" y="218"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow2" bpmnElement="Flow_2">
+        <di:waypoint x="370" y="218"/>
+        <di:waypoint x="420" y="218"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>

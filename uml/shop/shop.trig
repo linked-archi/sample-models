@@ -1,0 +1,713 @@
+@prefix arch: <https://meta.linked.archi/core#> .
+@prefix archvis: <https://meta.linked.archi/core-vis#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix schema: <https://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix uml: <https://meta.linked.archi/uml/onto#> .
+@prefix umlvp: <https://meta.linked.archi/uml/viewpoints#> .
+
+<https://example.org/la/plantuml/shop/graph/model> {<https://example.org/la/plantuml/shop/model> a arch:Model;
+vann:preferredNamespaceUri "https://example.org/la/plantuml/shop/";
+vann:preferredNamespacePrefix "m";
+arch:modelConformsToMetamodel <https://meta.linked.archi/uml/metamodel#UML2>;
+skos:prefLabel "Shop"@en .
+<https://example.org/la/plantuml/shop/folder/am-root> a arch:Folder;
+schema:name "shop" .
+<https://example.org/la/plantuml/shop/folder/Elements> a arch:Folder;
+schema:name "Elements";
+dct:isPartOf <https://example.org/la/plantuml/shop/folder/am-root> .
+<https://example.org/la/plantuml/shop/folder/Relationships> a arch:Folder;
+schema:name "Relationships";
+dct:isPartOf <https://example.org/la/plantuml/shop/folder/am-root> .
+<https://example.org/la/plantuml/shop/folder/Views> a arch:Folder;
+schema:name "Views";
+dct:isPartOf <https://example.org/la/plantuml/shop/folder/am-root> .
+<https://example.org/la/plantuml/shop/folder/Elements> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Elements/item/5138f18622db47587252> .
+<https://example.org/la/plantuml/shop/folder/Elements/item/5138f18622db47587252> a schema:ListItem;
+schema:position "1"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/element/Warehouse> .
+<https://example.org/la/plantuml/shop/element/Warehouse> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Elements> .
+<https://example.org/la/plantuml/shop/folder/Elements> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Elements/item/cfa81aa02a23c2e1f54a> .
+<https://example.org/la/plantuml/shop/folder/Elements/item/cfa81aa02a23c2e1f54a> a schema:ListItem;
+schema:position "2"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/element/StockItem> .
+<https://example.org/la/plantuml/shop/element/StockItem> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Elements> .
+<https://example.org/la/plantuml/shop/folder/Elements> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Elements/item/9a06a262c621100d71bb> .
+<https://example.org/la/plantuml/shop/folder/Elements/item/9a06a262c621100d71bb> a schema:ListItem;
+schema:position "3"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/element/Supplier> .
+<https://example.org/la/plantuml/shop/element/Supplier> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Elements> .
+<https://example.org/la/plantuml/shop/folder/Elements> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Elements/item/17843908d102fa6a5b4c> .
+<https://example.org/la/plantuml/shop/folder/Elements/item/17843908d102fa6a5b4c> a schema:ListItem;
+schema:position "4"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/element/Trackable> .
+<https://example.org/la/plantuml/shop/element/Trackable> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Elements> .
+<https://example.org/la/plantuml/shop/folder/Elements> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Elements/item/eef2203ef552a53dbda0> .
+<https://example.org/la/plantuml/shop/folder/Elements/item/eef2203ef552a53dbda0> a schema:ListItem;
+schema:position "5"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/element/StockStatus> .
+<https://example.org/la/plantuml/shop/element/StockStatus> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Elements> .
+<https://example.org/la/plantuml/shop/folder/Elements> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Elements/item/5c97d3c750f8f8058086> .
+<https://example.org/la/plantuml/shop/folder/Elements/item/5c97d3c750f8f8058086> a schema:ListItem;
+schema:position "6"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/element/Inventory> .
+<https://example.org/la/plantuml/shop/element/Inventory> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Elements> .
+<https://example.org/la/plantuml/shop/folder/Relationships> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Relationships/item/3f988d34e6d3bded41e2> .
+<https://example.org/la/plantuml/shop/folder/Relationships/item/3f988d34e6d3bded41e2> a schema:ListItem;
+schema:position "1"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/relationship/Warehouse__StockItem__holds__4c12eba3a2a423e661b9> .
+<https://example.org/la/plantuml/shop/relationship/Warehouse__StockItem__holds__4c12eba3a2a423e661b9> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Relationships> .
+<https://example.org/la/plantuml/shop/folder/Relationships> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Relationships/item/dca9e1cc75337155f8e5> .
+<https://example.org/la/plantuml/shop/folder/Relationships/item/dca9e1cc75337155f8e5> a schema:ListItem;
+schema:position "2"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/relationship/StockItem__StockStatus__status__0c0141526d05db350843> .
+<https://example.org/la/plantuml/shop/relationship/StockItem__StockStatus__status__0c0141526d05db350843> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Relationships> .
+<https://example.org/la/plantuml/shop/folder/Relationships> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Relationships/item/bb9492a03b8022a1b10b> .
+<https://example.org/la/plantuml/shop/folder/Relationships/item/bb9492a03b8022a1b10b> a schema:ListItem;
+schema:position "3"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/relationship/Supplier__StockItem__supplies__4218629679329a8af33c> .
+<https://example.org/la/plantuml/shop/relationship/Supplier__StockItem__supplies__4218629679329a8af33c> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Relationships> .
+<https://example.org/la/plantuml/shop/folder/Relationships> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Relationships/item/8890235a89a19c4c9bf3> .
+<https://example.org/la/plantuml/shop/folder/Relationships/item/8890235a89a19c4c9bf3> a schema:ListItem;
+schema:position "4"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/relationship/StockItem__Trackable__realization__8129b1d667296d2b7c1d> .
+<https://example.org/la/plantuml/shop/relationship/StockItem__Trackable__realization__8129b1d667296d2b7c1d> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Relationships> .
+<https://example.org/la/plantuml/shop/folder/Views> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Views/item/b06d82e1086b66e4fb00> .
+<https://example.org/la/plantuml/shop/folder/Views/item/b06d82e1086b66e4fb00> a schema:ListItem;
+schema:position "1"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/view/inventory-domain> .
+<https://example.org/la/plantuml/shop/view/inventory-domain> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Views> .
+<https://example.org/la/plantuml/shop/folder/Elements> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Elements/item/126aa72c3f43e1ac5218> .
+<https://example.org/la/plantuml/shop/folder/Elements/item/126aa72c3f43e1ac5218> a schema:ListItem;
+schema:position "7"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/element/PurchaseOrder> .
+<https://example.org/la/plantuml/shop/element/PurchaseOrder> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Elements> .
+<https://example.org/la/plantuml/shop/folder/Relationships> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Relationships/item/e44fc8e501b0a8468adc> .
+<https://example.org/la/plantuml/shop/folder/Relationships/item/e44fc8e501b0a8468adc> a schema:ListItem;
+schema:position "5"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/relationship/Warehouse__StockItem__monitors__3876ffe7497f31aeaa15> .
+<https://example.org/la/plantuml/shop/relationship/Warehouse__StockItem__monitors__3876ffe7497f31aeaa15> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Relationships> .
+<https://example.org/la/plantuml/shop/folder/Relationships> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Relationships/item/4419af40532180240705> .
+<https://example.org/la/plantuml/shop/folder/Relationships/item/4419af40532180240705> a schema:ListItem;
+schema:position "6"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/relationship/StockItem__PurchaseOrder__triggers__bf14751c864266302eea> .
+<https://example.org/la/plantuml/shop/relationship/StockItem__PurchaseOrder__triggers__bf14751c864266302eea> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Relationships> .
+<https://example.org/la/plantuml/shop/folder/Relationships> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Relationships/item/708b5844cc1803e304be> .
+<https://example.org/la/plantuml/shop/folder/Relationships/item/708b5844cc1803e304be> a schema:ListItem;
+schema:position "7"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/relationship/PurchaseOrder__Supplier__sentto__7d45c5361d1cc6e21315> .
+<https://example.org/la/plantuml/shop/relationship/PurchaseOrder__Supplier__sentto__7d45c5361d1cc6e21315> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Relationships> .
+<https://example.org/la/plantuml/shop/folder/Relationships> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Relationships/item/9c56bbc7a05d823dd0c1> .
+<https://example.org/la/plantuml/shop/folder/Relationships/item/9c56bbc7a05d823dd0c1> a schema:ListItem;
+schema:position "8"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/relationship/Supplier__Warehouse__delivers__8e9b233babcf2ac5e971> .
+<https://example.org/la/plantuml/shop/relationship/Supplier__Warehouse__delivers__8e9b233babcf2ac5e971> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Relationships> .
+<https://example.org/la/plantuml/shop/folder/Views> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Views/item/910aac15989719f53794> .
+<https://example.org/la/plantuml/shop/folder/Views/item/910aac15989719f53794> a schema:ListItem;
+schema:position "2"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/view/stock-replenishment> .
+<https://example.org/la/plantuml/shop/view/stock-replenishment> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Views> .
+<https://example.org/la/plantuml/shop/folder/Elements> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Elements/item/b23cf3bb7abe99626f7d> .
+<https://example.org/la/plantuml/shop/folder/Elements/item/b23cf3bb7abe99626f7d> a schema:ListItem;
+schema:position "8"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/element/Customer> .
+<https://example.org/la/plantuml/shop/element/Customer> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Elements> .
+<https://example.org/la/plantuml/shop/folder/Elements> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Elements/item/264e304a1e45aef9b726> .
+<https://example.org/la/plantuml/shop/folder/Elements/item/264e304a1e45aef9b726> a schema:ListItem;
+schema:position "9"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/element/Shop> .
+<https://example.org/la/plantuml/shop/element/Shop> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Elements> .
+<https://example.org/la/plantuml/shop/folder/Elements> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Elements/item/c63a501e4d98f27e1ef7> .
+<https://example.org/la/plantuml/shop/folder/Elements/item/c63a501e4d98f27e1ef7> a schema:ListItem;
+schema:position "10"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/element/PG> .
+<https://example.org/la/plantuml/shop/element/PG> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Elements> .
+<https://example.org/la/plantuml/shop/folder/Elements> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Elements/item/cb5d4d10c0a9515325d2> .
+<https://example.org/la/plantuml/shop/folder/Elements/item/cb5d4d10c0a9515325d2> a schema:ListItem;
+schema:position "11"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/element/Orders> .
+<https://example.org/la/plantuml/shop/element/Orders> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Elements> .
+<https://example.org/la/plantuml/shop/folder/Elements> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Elements/item/df4623844ca0ca3f0fa0> .
+<https://example.org/la/plantuml/shop/folder/Elements/item/df4623844ca0ca3f0fa0> a schema:ListItem;
+schema:position "12"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/element/DB> .
+<https://example.org/la/plantuml/shop/element/DB> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Elements> .
+<https://example.org/la/plantuml/shop/folder/Relationships> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Relationships/item/53107f76d1fef41da50d> .
+<https://example.org/la/plantuml/shop/folder/Relationships/item/53107f76d1fef41da50d> a schema:ListItem;
+schema:position "9"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/relationship/Customer__Shop__addtocart_item__498e516de80cf4ccc834> .
+<https://example.org/la/plantuml/shop/relationship/Customer__Shop__addtocart_item__498e516de80cf4ccc834> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Relationships> .
+<https://example.org/la/plantuml/shop/folder/Relationships> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Relationships/item/463948cebf7d642f846f> .
+<https://example.org/la/plantuml/shop/folder/Relationships/item/463948cebf7d642f846f> a schema:ListItem;
+schema:position "10"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/relationship/Customer__Shop__checkout__0fef9905904a12ba24fa> .
+<https://example.org/la/plantuml/shop/relationship/Customer__Shop__checkout__0fef9905904a12ba24fa> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Relationships> .
+<https://example.org/la/plantuml/shop/folder/Relationships> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Relationships/item/92ee455074e80e313646> .
+<https://example.org/la/plantuml/shop/folder/Relationships/item/92ee455074e80e313646> a schema:ListItem;
+schema:position "11"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/relationship/Shop__PG__authorize_amount__a07978b108416642d98c> .
+<https://example.org/la/plantuml/shop/relationship/Shop__PG__authorize_amount__a07978b108416642d98c> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Relationships> .
+<https://example.org/la/plantuml/shop/folder/Relationships> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Relationships/item/79526c7abe32ac237538> .
+<https://example.org/la/plantuml/shop/folder/Relationships/item/79526c7abe32ac237538> a schema:ListItem;
+schema:position "12"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/relationship/PG__Shop__authtoken__77b514fe9b456da95ff4> .
+<https://example.org/la/plantuml/shop/relationship/PG__Shop__authtoken__77b514fe9b456da95ff4> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Relationships> .
+<https://example.org/la/plantuml/shop/folder/Relationships> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Relationships/item/002d88aeaadf4f176a64> .
+<https://example.org/la/plantuml/shop/folder/Relationships/item/002d88aeaadf4f176a64> a schema:ListItem;
+schema:position "13"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/relationship/Shop__Orders__createorder_items_authtoken__c77aeba5e3da579d6907> .
+<https://example.org/la/plantuml/shop/relationship/Shop__Orders__createorder_items_authtoken__c77aeba5e3da579d6907> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Relationships> .
+<https://example.org/la/plantuml/shop/folder/Relationships> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Relationships/item/66a6373615426daf0bf1> .
+<https://example.org/la/plantuml/shop/folder/Relationships/item/66a6373615426daf0bf1> a schema:ListItem;
+schema:position "14"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/relationship/Orders__DB__persist_order__80c8a261a7221049a0b2> .
+<https://example.org/la/plantuml/shop/relationship/Orders__DB__persist_order__80c8a261a7221049a0b2> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Relationships> .
+<https://example.org/la/plantuml/shop/folder/Relationships> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Relationships/item/ebfca74036a4c6e94da6> .
+<https://example.org/la/plantuml/shop/folder/Relationships/item/ebfca74036a4c6e94da6> a schema:ListItem;
+schema:position "15"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/relationship/DB__Orders__orderid__3bf94966ca579b4eb326> .
+<https://example.org/la/plantuml/shop/relationship/DB__Orders__orderid__3bf94966ca579b4eb326> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Relationships> .
+<https://example.org/la/plantuml/shop/folder/Relationships> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Relationships/item/a5cab496d379470daeac> .
+<https://example.org/la/plantuml/shop/folder/Relationships/item/a5cab496d379470daeac> a schema:ListItem;
+schema:position "16"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/relationship/Orders__PG__capture_authtoken_orderid__749fb33a95eb7e621495> .
+<https://example.org/la/plantuml/shop/relationship/Orders__PG__capture_authtoken_orderid__749fb33a95eb7e621495> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Relationships> .
+<https://example.org/la/plantuml/shop/folder/Relationships> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Relationships/item/77fd7c8cb105881ed82f> .
+<https://example.org/la/plantuml/shop/folder/Relationships/item/77fd7c8cb105881ed82f> a schema:ListItem;
+schema:position "17"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/relationship/PG__Orders__confirmation__b777d14fbc8028dd61e2> .
+<https://example.org/la/plantuml/shop/relationship/PG__Orders__confirmation__b777d14fbc8028dd61e2> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Relationships> .
+<https://example.org/la/plantuml/shop/folder/Relationships> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Relationships/item/45b709cc8b30c8726e1b> .
+<https://example.org/la/plantuml/shop/folder/Relationships/item/45b709cc8b30c8726e1b> a schema:ListItem;
+schema:position "18"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/relationship/Orders__Shop__orderconfirmation__cf9ae684a69061f4af7c> .
+<https://example.org/la/plantuml/shop/relationship/Orders__Shop__orderconfirmation__cf9ae684a69061f4af7c> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Relationships> .
+<https://example.org/la/plantuml/shop/folder/Relationships> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Relationships/item/2cb0e26876f7574e99ce> .
+<https://example.org/la/plantuml/shop/folder/Relationships/item/2cb0e26876f7574e99ce> a schema:ListItem;
+schema:position "19"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/relationship/Shop__Customer__showconfirmation_orderid__57487717459648063421> .
+<https://example.org/la/plantuml/shop/relationship/Shop__Customer__showconfirmation_orderid__57487717459648063421> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Relationships> .
+<https://example.org/la/plantuml/shop/folder/Views> schema:itemListElement <https://example.org/la/plantuml/shop/folder/Views/item/d1f22648c3f0a691d707> .
+<https://example.org/la/plantuml/shop/folder/Views/item/d1f22648c3f0a691d707> a schema:ListItem;
+schema:position "3"^^<http://www.w3.org/2001/XMLSchema#int>;
+schema:item <https://example.org/la/plantuml/shop/view/checkout-sequence> .
+<https://example.org/la/plantuml/shop/view/checkout-sequence> dct:isPartOf <https://example.org/la/plantuml/shop/folder/Views> .
+}
+
+<https://example.org/la/plantuml/shop/graph/provenance> {<https://example.org/la/plantuml/shop/model> dct:replaces <https://example.org/la/plantuml/shop> .
+<https://example.org/la/plantuml/shop> <http://www.w3.org/2002/07/owl#sameAs> <https://example.org/la/plantuml/shop/model>;
+dct:isReplacedBy <https://example.org/la/plantuml/shop/model> .
+<https://example.org/la/plantuml/shop/view/inventory-domain> dct:source "inventory-domain.puml" .
+<https://example.org/la/provenance/run/ea4fa0d2> a prov:Activity;
+prov:startedAtTime "2026-11-25T13:18:59.900343+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+prov:endedAtTime "2026-11-25T13:18:59.967098+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+prov:wasAssociatedWith <https://example.org/la/provenance/agent/5d2070df> .
+<https://example.org/la/plantuml/shop/model> prov:generatedAtTime "2026-11-25T13:18:59.967098+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://example.org/la/provenance/agent/5d2070df> a prov:SoftwareAgent,schema:SoftwareApplication;
+schema:name "plantuml2linkedarchi";
+schema:softwareVersion "1.3.0-SNAPSHOT" .
+<https://example.org/la/provenance/source/inventory-domain-puml> a prov:Entity;
+schema:name "inventory-domain.puml" .
+<https://example.org/la/provenance/run/ea4fa0d2> prov:used <https://example.org/la/provenance/source/inventory-domain-puml> .
+<https://example.org/la/plantuml/shop/view/inventory-domain> prov:wasGeneratedBy <https://example.org/la/provenance/run/ea4fa0d2>;
+prov:wasDerivedFrom <https://example.org/la/provenance/source/inventory-domain-puml> .
+<https://example.org/la/plantuml/shop/graph/semantic> a prov:Bundle;
+prov:wasGeneratedBy <https://example.org/la/provenance/run/ea4fa0d2>;
+prov:generatedAtTime "2026-11-25T13:18:59.967098+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+prov:wasDerivedFrom <https://example.org/la/provenance/source/inventory-domain-puml> .
+<https://example.org/la/plantuml/shop/graph/views> a prov:Bundle;
+prov:wasGeneratedBy <https://example.org/la/provenance/run/ea4fa0d2>;
+prov:generatedAtTime "2026-11-25T13:18:59.967098+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+prov:wasDerivedFrom <https://example.org/la/provenance/source/inventory-domain-puml> .
+<https://example.org/la/plantuml/shop/graph/model> a prov:Bundle;
+prov:wasGeneratedBy <https://example.org/la/provenance/run/ea4fa0d2>;
+prov:generatedAtTime "2026-11-25T13:18:59.967098+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://example.org/la/provenance/source/diagram-index-yaml> a prov:Entity;
+schema:name "diagram-index.yaml" .
+<https://example.org/la/plantuml/shop/graph/model> prov:wasDerivedFrom <https://example.org/la/provenance/source/diagram-index-yaml> .
+<https://example.org/la/provenance/run/ea4fa0d2> prov:used <https://example.org/la/provenance/source/diagram-index-yaml> .
+<https://example.org/la/plantuml/shop/view/inventory-domain> dct:title "Inventory Domain Model";
+dct:created "2024-01-10";
+dct:modified "2025-09-05";
+dct:description "Domain model for warehouse inventory management." .
+<https://example.org/la/plantuml/shop/model> dct:title "Shop";
+dct:creator "Logistics Team";
+<http://www.w3.org/2002/07/owl#versionInfo> "2.1" .
+<https://example.org/la/plantuml/shop/view/inventory-domain> adms:status <http://purl.org/adms/status/Completed> .
+<https://example.org/la/plantuml/shop/view/stock-replenishment> dct:source "stock-replenishment.puml" .
+<https://example.org/la/provenance/source/stock-replenishment-puml> a prov:Entity;
+schema:name "stock-replenishment.puml" .
+<https://example.org/la/provenance/run/ea4fa0d2> prov:used <https://example.org/la/provenance/source/stock-replenishment-puml> .
+<https://example.org/la/plantuml/shop/view/stock-replenishment> prov:wasGeneratedBy <https://example.org/la/provenance/run/ea4fa0d2>;
+prov:wasDerivedFrom <https://example.org/la/provenance/source/stock-replenishment-puml> .
+<https://example.org/la/plantuml/shop/graph/semantic> prov:wasDerivedFrom <https://example.org/la/provenance/source/stock-replenishment-puml> .
+<https://example.org/la/plantuml/shop/graph/views> prov:wasDerivedFrom <https://example.org/la/provenance/source/stock-replenishment-puml> .
+<https://example.org/la/plantuml/shop/view/stock-replenishment> dct:title "Stock Replenishment";
+dct:created "2025-03-22";
+dct:modified "2025-09-05";
+dct:description "How low stock raises a purchase order with a supplier.";
+adms:status <http://purl.org/adms/status/Completed> .
+<https://example.org/la/plantuml/shop/view/checkout-sequence> dct:source "checkout-sequence.puml" .
+<https://example.org/la/provenance/source/checkout-sequence-puml> a prov:Entity;
+schema:name "checkout-sequence.puml" .
+<https://example.org/la/provenance/run/ea4fa0d2> prov:used <https://example.org/la/provenance/source/checkout-sequence-puml> .
+<https://example.org/la/plantuml/shop/view/checkout-sequence> prov:wasGeneratedBy <https://example.org/la/provenance/run/ea4fa0d2>;
+prov:wasDerivedFrom <https://example.org/la/provenance/source/checkout-sequence-puml> .
+<https://example.org/la/plantuml/shop/graph/semantic> prov:wasDerivedFrom <https://example.org/la/provenance/source/checkout-sequence-puml> .
+<https://example.org/la/plantuml/shop/graph/views> prov:wasDerivedFrom <https://example.org/la/provenance/source/checkout-sequence-puml> .
+<https://example.org/la/plantuml/shop/view/checkout-sequence> dct:title "Checkout Flow";
+dct:created "2024-06-01";
+dct:modified "2025-10-15";
+dct:description "Sequence diagram showing the checkout payment flow." .
+<https://example.org/la/plantuml/shop/model> dct:creator "Commerce Team" .
+<https://example.org/la/plantuml/shop/view/checkout-sequence> adms:status <http://purl.org/adms/status/Completed> .
+}
+
+<https://example.org/la/plantuml/shop/graph/semantic> {<https://example.org/la/plantuml/shop/element/Warehouse> a arch:Element,arch:ModelConcept;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+a uml:Class;
+skos:notation "Warehouse";
+skos:prefLabel "Warehouse"@en;
+uml:namespace <https://example.org/la/plantuml/shop/element/Inventory> .
+<https://example.org/la/plantuml/shop/element/StockItem> a arch:Element,arch:ModelConcept;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+a uml:Class;
+skos:notation "StockItem";
+skos:prefLabel "StockItem"@en;
+uml:namespace <https://example.org/la/plantuml/shop/element/Inventory> .
+<https://example.org/la/plantuml/shop/element/Supplier> a arch:Element,arch:ModelConcept;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+a uml:Class;
+skos:notation "Supplier";
+skos:prefLabel "Supplier"@en;
+uml:namespace <https://example.org/la/plantuml/shop/element/Inventory> .
+<https://example.org/la/plantuml/shop/element/Trackable> a arch:Element,arch:ModelConcept;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+a uml:Interface;
+skos:notation "Trackable";
+skos:prefLabel "Trackable"@en;
+uml:namespace <https://example.org/la/plantuml/shop/element/Inventory> .
+<https://example.org/la/plantuml/shop/element/StockStatus> a arch:Element,arch:ModelConcept;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+a uml:Enumeration;
+skos:notation "StockStatus";
+skos:prefLabel "StockStatus"@en;
+uml:namespace <https://example.org/la/plantuml/shop/element/Inventory> .
+<https://example.org/la/plantuml/shop/element/Inventory> a arch:Element,arch:ModelConcept;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+a uml:Package;
+skos:notation "Inventory";
+skos:prefLabel "Inventory"@en .
+<https://example.org/la/plantuml/shop/relationship/Warehouse__StockItem__holds__4c12eba3a2a423e661b9> a arch:QualifiedRelationship,arch:ModelConcept;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+a uml:Composition;
+arch:source <https://example.org/la/plantuml/shop/element/Warehouse>;
+arch:target <https://example.org/la/plantuml/shop/element/StockItem>;
+skos:notation "Warehouse__StockItem__holds";
+skos:prefLabel "holds"@en .
+<https://example.org/la/plantuml/shop/element/Warehouse> arch:hasQualifiedRelationship <https://example.org/la/plantuml/shop/relationship/Warehouse__StockItem__holds__4c12eba3a2a423e661b9>;
+uml:composedOf <https://example.org/la/plantuml/shop/element/StockItem> .
+}
+@version "1.2" .
+
+<https://example.org/la/plantuml/shop/graph/semantic> {<https://example.org/la/plantuml/shop/relationship/Warehouse__StockItem__holds__4c12eba3a2a423e661b9> rdf:reifies <<( <https://example.org/la/plantuml/shop/element/Warehouse> uml:composedOf <https://example.org/la/plantuml/shop/element/StockItem> )>> .
+<https://example.org/la/plantuml/shop/relationship/StockItem__StockStatus__status__0c0141526d05db350843> a arch:QualifiedRelationship,arch:ModelConcept;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+a uml:Association;
+arch:source <https://example.org/la/plantuml/shop/element/StockItem>;
+arch:target <https://example.org/la/plantuml/shop/element/StockStatus>;
+skos:notation "StockItem__StockStatus__status";
+skos:prefLabel "status"@en .
+<https://example.org/la/plantuml/shop/element/StockItem> arch:hasQualifiedRelationship <https://example.org/la/plantuml/shop/relationship/StockItem__StockStatus__status__0c0141526d05db350843>;
+uml:associatedWith <https://example.org/la/plantuml/shop/element/StockStatus> .
+<https://example.org/la/plantuml/shop/relationship/StockItem__StockStatus__status__0c0141526d05db350843> rdf:reifies <<( <https://example.org/la/plantuml/shop/element/StockItem> uml:associatedWith <https://example.org/la/plantuml/shop/element/StockStatus> )>> .
+<https://example.org/la/plantuml/shop/relationship/Supplier__StockItem__supplies__4218629679329a8af33c> a arch:QualifiedRelationship,arch:ModelConcept;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+a uml:Association;
+arch:source <https://example.org/la/plantuml/shop/element/Supplier>;
+arch:target <https://example.org/la/plantuml/shop/element/StockItem>;
+skos:notation "Supplier__StockItem__supplies";
+skos:prefLabel "supplies"@en .
+<https://example.org/la/plantuml/shop/element/Supplier> arch:hasQualifiedRelationship <https://example.org/la/plantuml/shop/relationship/Supplier__StockItem__supplies__4218629679329a8af33c>;
+uml:associatedWith <https://example.org/la/plantuml/shop/element/StockItem> .
+<https://example.org/la/plantuml/shop/relationship/Supplier__StockItem__supplies__4218629679329a8af33c> rdf:reifies <<( <https://example.org/la/plantuml/shop/element/Supplier> uml:associatedWith <https://example.org/la/plantuml/shop/element/StockItem> )>> .
+<https://example.org/la/plantuml/shop/relationship/StockItem__Trackable__realization__8129b1d667296d2b7c1d> a arch:QualifiedRelationship,arch:ModelConcept;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+a uml:Realization;
+arch:source <https://example.org/la/plantuml/shop/element/StockItem>;
+arch:target <https://example.org/la/plantuml/shop/element/Trackable>;
+skos:notation "StockItem__Trackable__realization" .
+<https://example.org/la/plantuml/shop/element/StockItem> arch:hasQualifiedRelationship <https://example.org/la/plantuml/shop/relationship/StockItem__Trackable__realization__8129b1d667296d2b7c1d>;
+uml:realizes <https://example.org/la/plantuml/shop/element/Trackable> .
+<https://example.org/la/plantuml/shop/relationship/StockItem__Trackable__realization__8129b1d667296d2b7c1d> rdf:reifies <<( <https://example.org/la/plantuml/shop/element/StockItem> uml:realizes <https://example.org/la/plantuml/shop/element/Trackable> )>> .
+<https://example.org/la/plantuml/shop/view/inventory-domain> a arch:View,arch:Diagram;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+dct:isPartOf <https://example.org/la/plantuml/shop/model>;
+skos:notation "inventory-domain";
+skos:prefLabel "Inventory Domain Model"@en;
+arch:viewConformsToViewpoint umlvp:ClassDiagram .
+<https://example.org/la/plantuml/shop/element/Warehouse> arch:inView <https://example.org/la/plantuml/shop/view/inventory-domain> .
+<https://example.org/la/plantuml/shop/element/StockItem> arch:inView <https://example.org/la/plantuml/shop/view/inventory-domain> .
+<https://example.org/la/plantuml/shop/element/Supplier> arch:inView <https://example.org/la/plantuml/shop/view/inventory-domain> .
+<https://example.org/la/plantuml/shop/element/Trackable> arch:inView <https://example.org/la/plantuml/shop/view/inventory-domain> .
+<https://example.org/la/plantuml/shop/element/StockStatus> arch:inView <https://example.org/la/plantuml/shop/view/inventory-domain> .
+<https://example.org/la/plantuml/shop/element/Inventory> arch:inView <https://example.org/la/plantuml/shop/view/inventory-domain> .
+<https://example.org/la/plantuml/shop/relationship/Warehouse__StockItem__holds__4c12eba3a2a423e661b9> arch:inView <https://example.org/la/plantuml/shop/view/inventory-domain> .
+<https://example.org/la/plantuml/shop/relationship/StockItem__StockStatus__status__0c0141526d05db350843> arch:inView <https://example.org/la/plantuml/shop/view/inventory-domain> .
+<https://example.org/la/plantuml/shop/relationship/Supplier__StockItem__supplies__4218629679329a8af33c> arch:inView <https://example.org/la/plantuml/shop/view/inventory-domain> .
+<https://example.org/la/plantuml/shop/relationship/StockItem__Trackable__realization__8129b1d667296d2b7c1d> arch:inView <https://example.org/la/plantuml/shop/view/inventory-domain> .
+<https://example.org/la/plantuml/shop/element/PurchaseOrder> a arch:Element,arch:ModelConcept;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+a uml:Class;
+skos:notation "PurchaseOrder";
+skos:prefLabel "PurchaseOrder"@en .
+<https://example.org/la/plantuml/shop/relationship/Warehouse__StockItem__monitors__3876ffe7497f31aeaa15> a arch:QualifiedRelationship,arch:ModelConcept;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+a uml:Association;
+arch:source <https://example.org/la/plantuml/shop/element/Warehouse>;
+arch:target <https://example.org/la/plantuml/shop/element/StockItem>;
+skos:notation "Warehouse__StockItem__monitors";
+skos:prefLabel "monitors"@en .
+<https://example.org/la/plantuml/shop/element/Warehouse> arch:hasQualifiedRelationship <https://example.org/la/plantuml/shop/relationship/Warehouse__StockItem__monitors__3876ffe7497f31aeaa15>;
+uml:associatedWith <https://example.org/la/plantuml/shop/element/StockItem> .
+<https://example.org/la/plantuml/shop/relationship/Warehouse__StockItem__monitors__3876ffe7497f31aeaa15> rdf:reifies <<( <https://example.org/la/plantuml/shop/element/Warehouse> uml:associatedWith <https://example.org/la/plantuml/shop/element/StockItem> )>> .
+<https://example.org/la/plantuml/shop/relationship/StockItem__PurchaseOrder__triggers__bf14751c864266302eea> a arch:QualifiedRelationship,arch:ModelConcept;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+a uml:Association;
+arch:source <https://example.org/la/plantuml/shop/element/StockItem>;
+arch:target <https://example.org/la/plantuml/shop/element/PurchaseOrder>;
+skos:notation "StockItem__PurchaseOrder__triggers";
+skos:prefLabel "triggers"@en .
+<https://example.org/la/plantuml/shop/element/StockItem> arch:hasQualifiedRelationship <https://example.org/la/plantuml/shop/relationship/StockItem__PurchaseOrder__triggers__bf14751c864266302eea>;
+uml:associatedWith <https://example.org/la/plantuml/shop/element/PurchaseOrder> .
+<https://example.org/la/plantuml/shop/relationship/StockItem__PurchaseOrder__triggers__bf14751c864266302eea> rdf:reifies <<( <https://example.org/la/plantuml/shop/element/StockItem> uml:associatedWith <https://example.org/la/plantuml/shop/element/PurchaseOrder> )>> .
+<https://example.org/la/plantuml/shop/relationship/PurchaseOrder__Supplier__sentto__7d45c5361d1cc6e21315> a arch:QualifiedRelationship,arch:ModelConcept;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+a uml:Association;
+arch:source <https://example.org/la/plantuml/shop/element/PurchaseOrder>;
+arch:target <https://example.org/la/plantuml/shop/element/Supplier>;
+skos:notation "PurchaseOrder__Supplier__sentto";
+skos:prefLabel "sentTo"@en .
+<https://example.org/la/plantuml/shop/element/PurchaseOrder> arch:hasQualifiedRelationship <https://example.org/la/plantuml/shop/relationship/PurchaseOrder__Supplier__sentto__7d45c5361d1cc6e21315>;
+uml:associatedWith <https://example.org/la/plantuml/shop/element/Supplier> .
+<https://example.org/la/plantuml/shop/relationship/PurchaseOrder__Supplier__sentto__7d45c5361d1cc6e21315> rdf:reifies <<( <https://example.org/la/plantuml/shop/element/PurchaseOrder> uml:associatedWith <https://example.org/la/plantuml/shop/element/Supplier> )>> .
+<https://example.org/la/plantuml/shop/relationship/Supplier__Warehouse__delivers__8e9b233babcf2ac5e971> a arch:QualifiedRelationship,arch:ModelConcept;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+a uml:Association;
+arch:source <https://example.org/la/plantuml/shop/element/Supplier>;
+arch:target <https://example.org/la/plantuml/shop/element/Warehouse>;
+skos:notation "Supplier__Warehouse__delivers";
+skos:prefLabel "delivers"@en .
+<https://example.org/la/plantuml/shop/element/Supplier> arch:hasQualifiedRelationship <https://example.org/la/plantuml/shop/relationship/Supplier__Warehouse__delivers__8e9b233babcf2ac5e971>;
+uml:associatedWith <https://example.org/la/plantuml/shop/element/Warehouse> .
+<https://example.org/la/plantuml/shop/relationship/Supplier__Warehouse__delivers__8e9b233babcf2ac5e971> rdf:reifies <<( <https://example.org/la/plantuml/shop/element/Supplier> uml:associatedWith <https://example.org/la/plantuml/shop/element/Warehouse> )>> .
+<https://example.org/la/plantuml/shop/view/stock-replenishment> a arch:View,arch:Diagram;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+dct:isPartOf <https://example.org/la/plantuml/shop/model>;
+skos:notation "stock-replenishment";
+skos:prefLabel "Stock Replenishment"@en;
+arch:viewConformsToViewpoint umlvp:ClassDiagram .
+<https://example.org/la/plantuml/shop/element/Warehouse> arch:inView <https://example.org/la/plantuml/shop/view/stock-replenishment> .
+<https://example.org/la/plantuml/shop/element/StockItem> arch:inView <https://example.org/la/plantuml/shop/view/stock-replenishment> .
+<https://example.org/la/plantuml/shop/element/Supplier> arch:inView <https://example.org/la/plantuml/shop/view/stock-replenishment> .
+<https://example.org/la/plantuml/shop/element/PurchaseOrder> arch:inView <https://example.org/la/plantuml/shop/view/stock-replenishment> .
+<https://example.org/la/plantuml/shop/relationship/Warehouse__StockItem__monitors__3876ffe7497f31aeaa15> arch:inView <https://example.org/la/plantuml/shop/view/stock-replenishment> .
+<https://example.org/la/plantuml/shop/relationship/StockItem__PurchaseOrder__triggers__bf14751c864266302eea> arch:inView <https://example.org/la/plantuml/shop/view/stock-replenishment> .
+<https://example.org/la/plantuml/shop/relationship/PurchaseOrder__Supplier__sentto__7d45c5361d1cc6e21315> arch:inView <https://example.org/la/plantuml/shop/view/stock-replenishment> .
+<https://example.org/la/plantuml/shop/relationship/Supplier__Warehouse__delivers__8e9b233babcf2ac5e971> arch:inView <https://example.org/la/plantuml/shop/view/stock-replenishment> .
+<https://example.org/la/plantuml/shop/element/Customer> a arch:Element,arch:ModelConcept;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+a uml:Lifeline;
+skos:notation "Customer";
+skos:prefLabel "Customer"@en;
+schema:keywords "actor" .
+<https://example.org/la/plantuml/shop/element/Shop> a arch:Element,arch:ModelConcept;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+a uml:Lifeline;
+skos:notation "Shop";
+skos:prefLabel "Web Shop"@en .
+<https://example.org/la/plantuml/shop/element/PG> a arch:Element,arch:ModelConcept;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+a uml:Lifeline;
+skos:notation "PG";
+skos:prefLabel "Payment Gateway"@en .
+<https://example.org/la/plantuml/shop/element/Orders> a arch:Element,arch:ModelConcept;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+a uml:Lifeline;
+skos:notation "Orders";
+skos:prefLabel "Order Service"@en .
+<https://example.org/la/plantuml/shop/element/DB> a arch:Element,arch:ModelConcept;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+a uml:Lifeline;
+skos:notation "DB";
+skos:prefLabel "Order DB"@en;
+schema:keywords "database" .
+<https://example.org/la/plantuml/shop/relationship/Customer__Shop__addtocart_item__498e516de80cf4ccc834> a arch:QualifiedRelationship,arch:ModelConcept;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+a uml:Message;
+arch:source <https://example.org/la/plantuml/shop/element/Customer>;
+arch:target <https://example.org/la/plantuml/shop/element/Shop>;
+skos:notation "Customer__Shop__addtocart_item";
+skos:prefLabel "addToCart(item)"@en;
+uml:messageSort uml:SynchCall .
+<https://example.org/la/plantuml/shop/element/Customer> arch:hasQualifiedRelationship <https://example.org/la/plantuml/shop/relationship/Customer__Shop__addtocart_item__498e516de80cf4ccc834> .
+<https://example.org/la/plantuml/shop/relationship/Customer__Shop__checkout__0fef9905904a12ba24fa> a arch:QualifiedRelationship,arch:ModelConcept;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+a uml:Message;
+arch:source <https://example.org/la/plantuml/shop/element/Customer>;
+arch:target <https://example.org/la/plantuml/shop/element/Shop>;
+skos:notation "Customer__Shop__checkout";
+skos:prefLabel "checkout()"@en;
+uml:messageSort uml:SynchCall .
+<https://example.org/la/plantuml/shop/element/Customer> arch:hasQualifiedRelationship <https://example.org/la/plantuml/shop/relationship/Customer__Shop__checkout__0fef9905904a12ba24fa> .
+<https://example.org/la/plantuml/shop/relationship/Shop__PG__authorize_amount__a07978b108416642d98c> a arch:QualifiedRelationship,arch:ModelConcept;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+a uml:Message;
+arch:source <https://example.org/la/plantuml/shop/element/Shop>;
+arch:target <https://example.org/la/plantuml/shop/element/PG>;
+skos:notation "Shop__PG__authorize_amount";
+skos:prefLabel "authorize(amount)"@en;
+uml:messageSort uml:SynchCall .
+<https://example.org/la/plantuml/shop/element/Shop> arch:hasQualifiedRelationship <https://example.org/la/plantuml/shop/relationship/Shop__PG__authorize_amount__a07978b108416642d98c> .
+<https://example.org/la/plantuml/shop/relationship/PG__Shop__authtoken__77b514fe9b456da95ff4> a arch:QualifiedRelationship,arch:ModelConcept;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+a uml:Message;
+arch:source <https://example.org/la/plantuml/shop/element/PG>;
+arch:target <https://example.org/la/plantuml/shop/element/Shop>;
+skos:notation "PG__Shop__authtoken";
+skos:prefLabel "authToken"@en;
+uml:messageSort uml:Reply .
+<https://example.org/la/plantuml/shop/element/PG> arch:hasQualifiedRelationship <https://example.org/la/plantuml/shop/relationship/PG__Shop__authtoken__77b514fe9b456da95ff4> .
+<https://example.org/la/plantuml/shop/relationship/Shop__Orders__createorder_items_authtoken__c77aeba5e3da579d6907> a arch:QualifiedRelationship,arch:ModelConcept;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+a uml:Message;
+arch:source <https://example.org/la/plantuml/shop/element/Shop>;
+arch:target <https://example.org/la/plantuml/shop/element/Orders>;
+skos:notation "Shop__Orders__createorder_items_authtoken";
+skos:prefLabel "createOrder(items, authToken)"@en;
+uml:messageSort uml:SynchCall .
+<https://example.org/la/plantuml/shop/element/Shop> arch:hasQualifiedRelationship <https://example.org/la/plantuml/shop/relationship/Shop__Orders__createorder_items_authtoken__c77aeba5e3da579d6907> .
+<https://example.org/la/plantuml/shop/relationship/Orders__DB__persist_order__80c8a261a7221049a0b2> a arch:QualifiedRelationship,arch:ModelConcept;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+a uml:Message;
+arch:source <https://example.org/la/plantuml/shop/element/Orders>;
+arch:target <https://example.org/la/plantuml/shop/element/DB>;
+skos:notation "Orders__DB__persist_order";
+skos:prefLabel "persist(order)"@en;
+uml:messageSort uml:SynchCall .
+<https://example.org/la/plantuml/shop/element/Orders> arch:hasQualifiedRelationship <https://example.org/la/plantuml/shop/relationship/Orders__DB__persist_order__80c8a261a7221049a0b2> .
+<https://example.org/la/plantuml/shop/relationship/DB__Orders__orderid__3bf94966ca579b4eb326> a arch:QualifiedRelationship,arch:ModelConcept;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+a uml:Message;
+arch:source <https://example.org/la/plantuml/shop/element/DB>;
+arch:target <https://example.org/la/plantuml/shop/element/Orders>;
+skos:notation "DB__Orders__orderid";
+skos:prefLabel "orderId"@en;
+uml:messageSort uml:Reply .
+<https://example.org/la/plantuml/shop/element/DB> arch:hasQualifiedRelationship <https://example.org/la/plantuml/shop/relationship/DB__Orders__orderid__3bf94966ca579b4eb326> .
+<https://example.org/la/plantuml/shop/relationship/Orders__PG__capture_authtoken_orderid__749fb33a95eb7e621495> a arch:QualifiedRelationship,arch:ModelConcept;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+a uml:Message;
+arch:source <https://example.org/la/plantuml/shop/element/Orders>;
+arch:target <https://example.org/la/plantuml/shop/element/PG>;
+skos:notation "Orders__PG__capture_authtoken_orderid";
+skos:prefLabel "capture(authToken, orderId)"@en;
+uml:messageSort uml:SynchCall .
+<https://example.org/la/plantuml/shop/element/Orders> arch:hasQualifiedRelationship <https://example.org/la/plantuml/shop/relationship/Orders__PG__capture_authtoken_orderid__749fb33a95eb7e621495> .
+<https://example.org/la/plantuml/shop/relationship/PG__Orders__confirmation__b777d14fbc8028dd61e2> a arch:QualifiedRelationship,arch:ModelConcept;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+a uml:Message;
+arch:source <https://example.org/la/plantuml/shop/element/PG>;
+arch:target <https://example.org/la/plantuml/shop/element/Orders>;
+skos:notation "PG__Orders__confirmation";
+skos:prefLabel "confirmation"@en;
+uml:messageSort uml:Reply .
+<https://example.org/la/plantuml/shop/element/PG> arch:hasQualifiedRelationship <https://example.org/la/plantuml/shop/relationship/PG__Orders__confirmation__b777d14fbc8028dd61e2> .
+<https://example.org/la/plantuml/shop/relationship/Orders__Shop__orderconfirmation__cf9ae684a69061f4af7c> a arch:QualifiedRelationship,arch:ModelConcept;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+a uml:Message;
+arch:source <https://example.org/la/plantuml/shop/element/Orders>;
+arch:target <https://example.org/la/plantuml/shop/element/Shop>;
+skos:notation "Orders__Shop__orderconfirmation";
+skos:prefLabel "orderConfirmation"@en;
+uml:messageSort uml:Reply .
+<https://example.org/la/plantuml/shop/element/Orders> arch:hasQualifiedRelationship <https://example.org/la/plantuml/shop/relationship/Orders__Shop__orderconfirmation__cf9ae684a69061f4af7c> .
+<https://example.org/la/plantuml/shop/relationship/Shop__Customer__showconfirmation_orderid__57487717459648063421> a arch:QualifiedRelationship,arch:ModelConcept;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+a uml:Message;
+arch:source <https://example.org/la/plantuml/shop/element/Shop>;
+arch:target <https://example.org/la/plantuml/shop/element/Customer>;
+skos:notation "Shop__Customer__showconfirmation_orderid";
+skos:prefLabel "showConfirmation(orderId)"@en;
+uml:messageSort uml:Reply .
+<https://example.org/la/plantuml/shop/element/Shop> arch:hasQualifiedRelationship <https://example.org/la/plantuml/shop/relationship/Shop__Customer__showconfirmation_orderid__57487717459648063421> .
+<https://example.org/la/plantuml/shop/view/checkout-sequence> a arch:View,arch:Diagram;
+arch:inModel <https://example.org/la/plantuml/shop/model>;
+dct:isPartOf <https://example.org/la/plantuml/shop/model>;
+skos:notation "checkout-sequence";
+skos:prefLabel "Checkout Flow"@en;
+arch:viewConformsToViewpoint umlvp:SequenceDiagram .
+<https://example.org/la/plantuml/shop/element/Customer> arch:inView <https://example.org/la/plantuml/shop/view/checkout-sequence> .
+<https://example.org/la/plantuml/shop/element/Shop> arch:inView <https://example.org/la/plantuml/shop/view/checkout-sequence> .
+<https://example.org/la/plantuml/shop/element/PG> arch:inView <https://example.org/la/plantuml/shop/view/checkout-sequence> .
+<https://example.org/la/plantuml/shop/element/Orders> arch:inView <https://example.org/la/plantuml/shop/view/checkout-sequence> .
+<https://example.org/la/plantuml/shop/element/DB> arch:inView <https://example.org/la/plantuml/shop/view/checkout-sequence> .
+<https://example.org/la/plantuml/shop/relationship/Customer__Shop__addtocart_item__498e516de80cf4ccc834> arch:inView <https://example.org/la/plantuml/shop/view/checkout-sequence> .
+<https://example.org/la/plantuml/shop/relationship/Customer__Shop__checkout__0fef9905904a12ba24fa> arch:inView <https://example.org/la/plantuml/shop/view/checkout-sequence> .
+<https://example.org/la/plantuml/shop/relationship/Shop__PG__authorize_amount__a07978b108416642d98c> arch:inView <https://example.org/la/plantuml/shop/view/checkout-sequence> .
+<https://example.org/la/plantuml/shop/relationship/PG__Shop__authtoken__77b514fe9b456da95ff4> arch:inView <https://example.org/la/plantuml/shop/view/checkout-sequence> .
+<https://example.org/la/plantuml/shop/relationship/Shop__Orders__createorder_items_authtoken__c77aeba5e3da579d6907> arch:inView <https://example.org/la/plantuml/shop/view/checkout-sequence> .
+<https://example.org/la/plantuml/shop/relationship/Orders__DB__persist_order__80c8a261a7221049a0b2> arch:inView <https://example.org/la/plantuml/shop/view/checkout-sequence> .
+<https://example.org/la/plantuml/shop/relationship/DB__Orders__orderid__3bf94966ca579b4eb326> arch:inView <https://example.org/la/plantuml/shop/view/checkout-sequence> .
+<https://example.org/la/plantuml/shop/relationship/Orders__PG__capture_authtoken_orderid__749fb33a95eb7e621495> arch:inView <https://example.org/la/plantuml/shop/view/checkout-sequence> .
+<https://example.org/la/plantuml/shop/relationship/PG__Orders__confirmation__b777d14fbc8028dd61e2> arch:inView <https://example.org/la/plantuml/shop/view/checkout-sequence> .
+<https://example.org/la/plantuml/shop/relationship/Orders__Shop__orderconfirmation__cf9ae684a69061f4af7c> arch:inView <https://example.org/la/plantuml/shop/view/checkout-sequence> .
+<https://example.org/la/plantuml/shop/relationship/Shop__Customer__showconfirmation_orderid__57487717459648063421> arch:inView <https://example.org/la/plantuml/shop/view/checkout-sequence> .
+}
+
+<https://example.org/la/plantuml/shop/graph/views> {<https://example.org/la/plantuml/shop/view/inventory-domain#node-Warehouse> a archvis:ArchNode;
+archvis:view <https://example.org/la/plantuml/shop/view/inventory-domain>;
+archvis:archElement <https://example.org/la/plantuml/shop/element/Warehouse> .
+<https://example.org/la/plantuml/shop/view/inventory-domain#node-StockItem> a archvis:ArchNode;
+archvis:view <https://example.org/la/plantuml/shop/view/inventory-domain>;
+archvis:archElement <https://example.org/la/plantuml/shop/element/StockItem> .
+<https://example.org/la/plantuml/shop/view/inventory-domain#node-Supplier> a archvis:ArchNode;
+archvis:view <https://example.org/la/plantuml/shop/view/inventory-domain>;
+archvis:archElement <https://example.org/la/plantuml/shop/element/Supplier> .
+<https://example.org/la/plantuml/shop/view/inventory-domain#node-Trackable> a archvis:ArchNode;
+archvis:view <https://example.org/la/plantuml/shop/view/inventory-domain>;
+archvis:archElement <https://example.org/la/plantuml/shop/element/Trackable> .
+<https://example.org/la/plantuml/shop/view/inventory-domain#node-StockStatus> a archvis:ArchNode;
+archvis:view <https://example.org/la/plantuml/shop/view/inventory-domain>;
+archvis:archElement <https://example.org/la/plantuml/shop/element/StockStatus> .
+<https://example.org/la/plantuml/shop/view/inventory-domain#node-Inventory> a archvis:ArchNode;
+archvis:view <https://example.org/la/plantuml/shop/view/inventory-domain>;
+archvis:archElement <https://example.org/la/plantuml/shop/element/Inventory> .
+<https://example.org/la/plantuml/shop/view/inventory-domain#link-Warehouse__StockItem__holds__4c12eba3a2a423e661b9> a archvis:Link;
+archvis:view <https://example.org/la/plantuml/shop/view/inventory-domain>;
+archvis:archRelationship <https://example.org/la/plantuml/shop/relationship/Warehouse__StockItem__holds__4c12eba3a2a423e661b9>;
+archvis:source <https://example.org/la/plantuml/shop/view/inventory-domain#node-Warehouse>;
+archvis:target <https://example.org/la/plantuml/shop/view/inventory-domain#node-StockItem> .
+<https://example.org/la/plantuml/shop/view/inventory-domain#link-StockItem__StockStatus__status__0c0141526d05db350843> a archvis:Link;
+archvis:view <https://example.org/la/plantuml/shop/view/inventory-domain>;
+archvis:archRelationship <https://example.org/la/plantuml/shop/relationship/StockItem__StockStatus__status__0c0141526d05db350843>;
+archvis:source <https://example.org/la/plantuml/shop/view/inventory-domain#node-StockItem>;
+archvis:target <https://example.org/la/plantuml/shop/view/inventory-domain#node-StockStatus> .
+<https://example.org/la/plantuml/shop/view/inventory-domain#link-Supplier__StockItem__supplies__4218629679329a8af33c> a archvis:Link;
+archvis:view <https://example.org/la/plantuml/shop/view/inventory-domain>;
+archvis:archRelationship <https://example.org/la/plantuml/shop/relationship/Supplier__StockItem__supplies__4218629679329a8af33c>;
+archvis:source <https://example.org/la/plantuml/shop/view/inventory-domain#node-Supplier>;
+archvis:target <https://example.org/la/plantuml/shop/view/inventory-domain#node-StockItem> .
+<https://example.org/la/plantuml/shop/view/inventory-domain#link-StockItem__Trackable__realization__8129b1d667296d2b7c1d> a archvis:Link;
+archvis:view <https://example.org/la/plantuml/shop/view/inventory-domain>;
+archvis:archRelationship <https://example.org/la/plantuml/shop/relationship/StockItem__Trackable__realization__8129b1d667296d2b7c1d>;
+archvis:source <https://example.org/la/plantuml/shop/view/inventory-domain#node-StockItem>;
+archvis:target <https://example.org/la/plantuml/shop/view/inventory-domain#node-Trackable> .
+<https://example.org/la/plantuml/shop/view/stock-replenishment#node-Warehouse> a archvis:ArchNode;
+archvis:view <https://example.org/la/plantuml/shop/view/stock-replenishment>;
+archvis:archElement <https://example.org/la/plantuml/shop/element/Warehouse> .
+<https://example.org/la/plantuml/shop/view/stock-replenishment#node-StockItem> a archvis:ArchNode;
+archvis:view <https://example.org/la/plantuml/shop/view/stock-replenishment>;
+archvis:archElement <https://example.org/la/plantuml/shop/element/StockItem> .
+<https://example.org/la/plantuml/shop/view/stock-replenishment#node-Supplier> a archvis:ArchNode;
+archvis:view <https://example.org/la/plantuml/shop/view/stock-replenishment>;
+archvis:archElement <https://example.org/la/plantuml/shop/element/Supplier> .
+<https://example.org/la/plantuml/shop/view/stock-replenishment#node-PurchaseOrder> a archvis:ArchNode;
+archvis:view <https://example.org/la/plantuml/shop/view/stock-replenishment>;
+archvis:archElement <https://example.org/la/plantuml/shop/element/PurchaseOrder> .
+<https://example.org/la/plantuml/shop/view/stock-replenishment#link-Warehouse__StockItem__monitors__3876ffe7497f31aeaa15> a archvis:Link;
+archvis:view <https://example.org/la/plantuml/shop/view/stock-replenishment>;
+archvis:archRelationship <https://example.org/la/plantuml/shop/relationship/Warehouse__StockItem__monitors__3876ffe7497f31aeaa15>;
+archvis:source <https://example.org/la/plantuml/shop/view/stock-replenishment#node-Warehouse>;
+archvis:target <https://example.org/la/plantuml/shop/view/stock-replenishment#node-StockItem> .
+<https://example.org/la/plantuml/shop/view/stock-replenishment#link-StockItem__PurchaseOrder__triggers__bf14751c864266302eea> a archvis:Link;
+archvis:view <https://example.org/la/plantuml/shop/view/stock-replenishment>;
+archvis:archRelationship <https://example.org/la/plantuml/shop/relationship/StockItem__PurchaseOrder__triggers__bf14751c864266302eea>;
+archvis:source <https://example.org/la/plantuml/shop/view/stock-replenishment#node-StockItem>;
+archvis:target <https://example.org/la/plantuml/shop/view/stock-replenishment#node-PurchaseOrder> .
+<https://example.org/la/plantuml/shop/view/stock-replenishment#link-PurchaseOrder__Supplier__sentto__7d45c5361d1cc6e21315> a archvis:Link;
+archvis:view <https://example.org/la/plantuml/shop/view/stock-replenishment>;
+archvis:archRelationship <https://example.org/la/plantuml/shop/relationship/PurchaseOrder__Supplier__sentto__7d45c5361d1cc6e21315>;
+archvis:source <https://example.org/la/plantuml/shop/view/stock-replenishment#node-PurchaseOrder>;
+archvis:target <https://example.org/la/plantuml/shop/view/stock-replenishment#node-Supplier> .
+<https://example.org/la/plantuml/shop/view/stock-replenishment#link-Supplier__Warehouse__delivers__8e9b233babcf2ac5e971> a archvis:Link;
+archvis:view <https://example.org/la/plantuml/shop/view/stock-replenishment>;
+archvis:archRelationship <https://example.org/la/plantuml/shop/relationship/Supplier__Warehouse__delivers__8e9b233babcf2ac5e971>;
+archvis:source <https://example.org/la/plantuml/shop/view/stock-replenishment#node-Supplier>;
+archvis:target <https://example.org/la/plantuml/shop/view/stock-replenishment#node-Warehouse> .
+<https://example.org/la/plantuml/shop/view/checkout-sequence#node-Customer> a archvis:ArchNode;
+archvis:view <https://example.org/la/plantuml/shop/view/checkout-sequence>;
+archvis:archElement <https://example.org/la/plantuml/shop/element/Customer> .
+<https://example.org/la/plantuml/shop/view/checkout-sequence#node-Shop> a archvis:ArchNode;
+archvis:view <https://example.org/la/plantuml/shop/view/checkout-sequence>;
+archvis:archElement <https://example.org/la/plantuml/shop/element/Shop> .
+<https://example.org/la/plantuml/shop/view/checkout-sequence#node-PG> a archvis:ArchNode;
+archvis:view <https://example.org/la/plantuml/shop/view/checkout-sequence>;
+archvis:archElement <https://example.org/la/plantuml/shop/element/PG> .
+<https://example.org/la/plantuml/shop/view/checkout-sequence#node-Orders> a archvis:ArchNode;
+archvis:view <https://example.org/la/plantuml/shop/view/checkout-sequence>;
+archvis:archElement <https://example.org/la/plantuml/shop/element/Orders> .
+<https://example.org/la/plantuml/shop/view/checkout-sequence#node-DB> a archvis:ArchNode;
+archvis:view <https://example.org/la/plantuml/shop/view/checkout-sequence>;
+archvis:archElement <https://example.org/la/plantuml/shop/element/DB> .
+<https://example.org/la/plantuml/shop/view/checkout-sequence#link-Customer__Shop__addtocart_item__498e516de80cf4ccc834> a archvis:Link;
+archvis:view <https://example.org/la/plantuml/shop/view/checkout-sequence>;
+archvis:archRelationship <https://example.org/la/plantuml/shop/relationship/Customer__Shop__addtocart_item__498e516de80cf4ccc834>;
+archvis:source <https://example.org/la/plantuml/shop/view/checkout-sequence#node-Customer>;
+archvis:target <https://example.org/la/plantuml/shop/view/checkout-sequence#node-Shop> .
+<https://example.org/la/plantuml/shop/view/checkout-sequence#link-Customer__Shop__checkout__0fef9905904a12ba24fa> a archvis:Link;
+archvis:view <https://example.org/la/plantuml/shop/view/checkout-sequence>;
+archvis:archRelationship <https://example.org/la/plantuml/shop/relationship/Customer__Shop__checkout__0fef9905904a12ba24fa>;
+archvis:source <https://example.org/la/plantuml/shop/view/checkout-sequence#node-Customer>;
+archvis:target <https://example.org/la/plantuml/shop/view/checkout-sequence#node-Shop> .
+<https://example.org/la/plantuml/shop/view/checkout-sequence#link-Shop__PG__authorize_amount__a07978b108416642d98c> a archvis:Link;
+archvis:view <https://example.org/la/plantuml/shop/view/checkout-sequence>;
+archvis:archRelationship <https://example.org/la/plantuml/shop/relationship/Shop__PG__authorize_amount__a07978b108416642d98c>;
+archvis:source <https://example.org/la/plantuml/shop/view/checkout-sequence#node-Shop>;
+archvis:target <https://example.org/la/plantuml/shop/view/checkout-sequence#node-PG> .
+<https://example.org/la/plantuml/shop/view/checkout-sequence#link-PG__Shop__authtoken__77b514fe9b456da95ff4> a archvis:Link;
+archvis:view <https://example.org/la/plantuml/shop/view/checkout-sequence>;
+archvis:archRelationship <https://example.org/la/plantuml/shop/relationship/PG__Shop__authtoken__77b514fe9b456da95ff4>;
+archvis:source <https://example.org/la/plantuml/shop/view/checkout-sequence#node-PG>;
+archvis:target <https://example.org/la/plantuml/shop/view/checkout-sequence#node-Shop> .
+<https://example.org/la/plantuml/shop/view/checkout-sequence#link-Shop__Orders__createorder_items_authtoken__c77aeba5e3da579d6907> a archvis:Link;
+archvis:view <https://example.org/la/plantuml/shop/view/checkout-sequence>;
+archvis:archRelationship <https://example.org/la/plantuml/shop/relationship/Shop__Orders__createorder_items_authtoken__c77aeba5e3da579d6907>;
+archvis:source <https://example.org/la/plantuml/shop/view/checkout-sequence#node-Shop>;
+archvis:target <https://example.org/la/plantuml/shop/view/checkout-sequence#node-Orders> .
+<https://example.org/la/plantuml/shop/view/checkout-sequence#link-Orders__DB__persist_order__80c8a261a7221049a0b2> a archvis:Link;
+archvis:view <https://example.org/la/plantuml/shop/view/checkout-sequence>;
+archvis:archRelationship <https://example.org/la/plantuml/shop/relationship/Orders__DB__persist_order__80c8a261a7221049a0b2>;
+archvis:source <https://example.org/la/plantuml/shop/view/checkout-sequence#node-Orders>;
+archvis:target <https://example.org/la/plantuml/shop/view/checkout-sequence#node-DB> .
+<https://example.org/la/plantuml/shop/view/checkout-sequence#link-DB__Orders__orderid__3bf94966ca579b4eb326> a archvis:Link;
+archvis:view <https://example.org/la/plantuml/shop/view/checkout-sequence>;
+archvis:archRelationship <https://example.org/la/plantuml/shop/relationship/DB__Orders__orderid__3bf94966ca579b4eb326>;
+archvis:source <https://example.org/la/plantuml/shop/view/checkout-sequence#node-DB>;
+archvis:target <https://example.org/la/plantuml/shop/view/checkout-sequence#node-Orders> .
+<https://example.org/la/plantuml/shop/view/checkout-sequence#link-Orders__PG__capture_authtoken_orderid__749fb33a95eb7e621495> a archvis:Link;
+archvis:view <https://example.org/la/plantuml/shop/view/checkout-sequence>;
+archvis:archRelationship <https://example.org/la/plantuml/shop/relationship/Orders__PG__capture_authtoken_orderid__749fb33a95eb7e621495>;
+archvis:source <https://example.org/la/plantuml/shop/view/checkout-sequence#node-Orders>;
+archvis:target <https://example.org/la/plantuml/shop/view/checkout-sequence#node-PG> .
+<https://example.org/la/plantuml/shop/view/checkout-sequence#link-PG__Orders__confirmation__b777d14fbc8028dd61e2> a archvis:Link;
+archvis:view <https://example.org/la/plantuml/shop/view/checkout-sequence>;
+archvis:archRelationship <https://example.org/la/plantuml/shop/relationship/PG__Orders__confirmation__b777d14fbc8028dd61e2>;
+archvis:source <https://example.org/la/plantuml/shop/view/checkout-sequence#node-PG>;
+archvis:target <https://example.org/la/plantuml/shop/view/checkout-sequence#node-Orders> .
+<https://example.org/la/plantuml/shop/view/checkout-sequence#link-Orders__Shop__orderconfirmation__cf9ae684a69061f4af7c> a archvis:Link;
+archvis:view <https://example.org/la/plantuml/shop/view/checkout-sequence>;
+archvis:archRelationship <https://example.org/la/plantuml/shop/relationship/Orders__Shop__orderconfirmation__cf9ae684a69061f4af7c>;
+archvis:source <https://example.org/la/plantuml/shop/view/checkout-sequence#node-Orders>;
+archvis:target <https://example.org/la/plantuml/shop/view/checkout-sequence#node-Shop> .
+<https://example.org/la/plantuml/shop/view/checkout-sequence#link-Shop__Customer__showconfirmation_orderid__57487717459648063421> a archvis:Link;
+archvis:view <https://example.org/la/plantuml/shop/view/checkout-sequence>;
+archvis:archRelationship <https://example.org/la/plantuml/shop/relationship/Shop__Customer__showconfirmation_orderid__57487717459648063421>;
+archvis:source <https://example.org/la/plantuml/shop/view/checkout-sequence#node-Shop>;
+archvis:target <https://example.org/la/plantuml/shop/view/checkout-sequence#node-Customer> .
+}

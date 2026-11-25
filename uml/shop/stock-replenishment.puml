@@ -1,0 +1,19 @@
+' Second view over the same domain as inventory-domain.puml.
+'
+' Warehouse, StockItem and Supplier appear in both diagrams. Because the index lists them as
+' views of one model, PlantUML derives the same element ids from the same names, so each of
+' those is ONE arch:Element depicted by two views — not two unrelated resources.
+@startuml
+title Stock Replenishment
+class Warehouse
+class StockItem
+class Supplier
+class PurchaseOrder {
+  +number: String
+  +raisedAt: DateTime
+}
+Warehouse --> StockItem : monitors
+StockItem --> PurchaseOrder : triggers
+PurchaseOrder --> Supplier : sentTo
+Supplier --> Warehouse : delivers
+@enduml
